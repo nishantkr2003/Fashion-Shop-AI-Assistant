@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+.env/
+.venv/
+
+# Environment Variables
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Database
+*.db
+*.sqlite3
+
+# Pytest
+.pytest_cache/
+
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Uvicorn
+uvicorn.log
+
+# Alembic
+alembic/versions/__pycache__/
+
+# Node (if frontend included)
+node_modules/
+
+# Clerk / secrets
+*.pem
+secret.json
