@@ -128,3 +128,21 @@
     @apply font-sans;
   }
 }
+
+
+*{
+
+transition:
+
+all .15s ease;
+
+}
+
+
+body{
+
+background:
+
+#fafafa;
+
+}
