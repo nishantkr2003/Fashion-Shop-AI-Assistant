@@ -16,7 +16,7 @@ export default function UserProfile() {
     <div className="p-5 border-t">
       <button
         onClick={logout}
-        className="w-full rounded-xl border p-3">
+        className="w-full rounded-xl border p-3 text-white bg-black">
         Logout
       </button>
     </div>

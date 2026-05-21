@@ -1,0 +1,401 @@
+id,name,brand,category,color,size,price,rating,stock,description,image_url
+1,Classic Cotton T-Shirt,Nike,Clothing,Black,M,19.99,4.5,120,Soft cotton t-shirt for everyday wear,https://example.com/images/tshirt1.jpg
+2,Running Shoes,Adidas,Footwear,Black,42,79.99,4.7,75,Lightweight running shoes with breathable mesh,https://example.com/images/shoes1.jpg
+3,Slim Fit Jeans,Levis,Clothing,Blue,L,49.99,4.4,60,Comfortable slim fit denim jeans,https://example.com/images/jeans1.jpg
+4,Wireless Headphones,Sony,Electronics,Black,Standard,129.99,4.8,40,Noise cancelling over-ear headphones,https://example.com/images/headphones1.jpg
+5,Smart Watch,Apple,Electronics,Silver,44mm,299.99,4.9,25,Feature-rich smartwatch with fitness tracking,https://example.com/images/watch1.jpg
+6,Leather Wallet,Fossil,Accessories,Brown,Standard,39.99,4.3,90,Genuine leather wallet with multiple compartments,https://example.com/images/wallet1.jpg
+7,Sports Jacket,Puma,Clothing,Red,XL,89.99,4.6,35,Water-resistant sports jacket for outdoor activities,https://example.com/images/jacket1.jpg
+8,Backpack,Wildcraft,Bags,Green,25L,54.99,4.5,50,Durable backpack suitable for travel and college,https://example.com/images/backpack1.jpg
+9,Sunglasses,RayBan,Accessories,Black,Standard,149.99,4.7,20,Stylish UV-protected sunglasses,https://example.com/images/sunglasses1.jpg
+10,Gaming Mouse,Logitech,Electronics,Black,Standard,59.99,4.8,65,High precision wireless gaming mouse,https://example.com/images/mouse1.jpg
+11,Old Skool,Vans,Shoes,Navy/White,43,66.81,4,79,Side-stripe skate shoe in suede and canvas,https://example.com/images/old_skool_navy_white.jpg
+12,Bomber Jacket,Alpha Industries,Jackets,Olive,XL,103.24,4.1,11,Classic MA-1 bomber jacket with ribbed collar,https://example.com/images/bomber_jacket_olive.jpg
+13,Printed Band Tee,Pepe Jeans,T-Shirts,Black,M,18.42,5,72,Rock-inspired graphic tee with vintage print,https://example.com/images/printed_band_tee_black.jpg
+14,Old Skool,Vans,Shoes,Black/White,39,58.63,4.6,140,Side-stripe skate shoe in suede and canvas,https://example.com/images/old_skool_black_white.jpg
+15,Oversized Graphic Tee,H&M,T-Shirts,Olive,XL,21.6,4.7,25,Relaxed-fit graphic tee with bold print,https://example.com/images/oversized_graphic_tee_olive.jpg
+16,Sherpa Lined Hoodie,Columbia,Hoodies,Cream,S,61.47,4.6,18,Cozy sherpa-lined hoodie for cold days,https://example.com/images/sherpa_lined_hoodie_cream.jpg
+17,Tech Fleece Hoodie,Nike,Hoodies,Dark Grey,XL,84.97,3.9,94,Slim fit tech fleece hoodie with bonded fabric,https://example.com/images/tech_fleece_hoodie_dark_grey.jpg
+18,Denim Trucker Jacket,Levi's,Jackets,Dark Wash,S,87.03,4.8,141,Classic denim trucker jacket with chest pockets,https://example.com/images/denim_trucker_jacket_dark_wash.jpg
+19,Tote Bag,Longchamp,Bags,Red,L,59.01,3.9,24,Foldable nylon tote bag with leather handles,https://example.com/images/tote_bag_red.jpg
+20,Slim Fit Hoodie,H&M,Hoodies,Olive,L,27.81,4.6,74,Slim cut jersey hoodie with adjustable drawstring,https://example.com/images/slim_fit_hoodie_olive.jpg
+21,Chuck Taylor All Star,Converse,Shoes,Black,40,58.58,4.6,53,Classic high-top canvas sneaker,https://example.com/images/chuck_taylor_all_star_black.jpg
+22,Rain Jacket,Patagonia,Jackets,Red,M,131.85,4.5,6,Waterproof rain jacket with taped seams and hood,https://example.com/images/rain_jacket_red.jpg
+23,Slim Fit Hoodie,H&M,Hoodies,Olive,M,29.44,4.3,124,Slim cut jersey hoodie with adjustable drawstring,https://example.com/images/slim_fit_hoodie_olive.jpg
+24,Fresh Foam 1080,New Balance,Shoes,Black,45,137.17,4,88,Premium cushioned running shoe for long distances,https://example.com/images/fresh_foam_1080_black.jpg
+25,Polo Shirt,Ralph Lauren,T-Shirts,Red,XL,75.31,4,126,Classic pique cotton polo with embroidered logo,https://example.com/images/polo_shirt_red.jpg
+26,Windbreaker Jacket,Nike,Jackets,Blue,L,61.47,4.9,81,Packable windbreaker with full zip and hood,https://example.com/images/windbreaker_jacket_blue.jpg
+27,574 Core,New Balance,Shoes,Grey,45,75.7,4.8,18,Everyday heritage runner with ENCAP midsole,https://example.com/images/574_core_grey.jpg
+28,Relaxed Tapered Jeans,Uniqlo,Jeans,Light Grey,28,43.61,4.2,51,Relaxed through hip and thigh with tapered leg,https://example.com/images/relaxed_tapered_jeans_light_grey.jpg
+29,Stan Smith,Adidas,Shoes,White/Navy,40,69.28,3.8,32,Clean leather tennis sneaker with perforated 3-stripes,https://example.com/images/stan_smith_white_navy.jpg
+30,Fresh Foam 1080,New Balance,Shoes,Blue,45,131.22,4.9,119,Premium cushioned running shoe for long distances,https://example.com/images/fresh_foam_1080_blue.jpg
+31,Gel-Lyte III,Asics,Shoes,Birch/Birch,42,88.24,4.8,64,Retro running shoe with split tongue design,https://example.com/images/gel_lyte_iii_birch_birch.jpg
+32,Air Force 1,Nike,Shoes,Navy,42,109.37,4,99,Iconic low-top sneaker with foam cushioning,https://example.com/images/air_force_1_navy.jpg
+33,Tech Fabric Tee,Under Armour,T-Shirts,White,S,28.83,4.3,44,Anti-odor tech fabric tee for active use,https://example.com/images/tech_fabric_tee_white.jpg
+34,Distressed Slim Jeans,Pepe Jeans,Jeans,Medium Wash,30,60.14,4.1,118,Slim fit jeans with authentic rip and distress details,https://example.com/images/distressed_slim_jeans_medium_wash.jpg
+35,Athletic Hoodie,Reebok,Hoodies,Navy,XL,59.98,4.6,73,Moisture-wicking hoodie built for training sessions,https://example.com/images/athletic_hoodie_navy.jpg
+36,Slim Tapered Jeans,G-Star Raw,Jeans,Dark Aged,32,86.01,4.7,25,Slim tapered 3D crafted denim for a modern silhouette,https://example.com/images/slim_tapered_jeans_dark_aged.jpg
+37,Air Force 1,Nike,Shoes,Red,41,100.44,3.8,144,Iconic low-top sneaker with foam cushioning,https://example.com/images/air_force_1_red.jpg
+38,Essential V-Neck Tee,Uniqlo,T-Shirts,White,XS,14.13,4.3,147,Soft ribbed v-neck for everyday comfort,https://example.com/images/essential_v_neck_tee_white.jpg
+39,Dry-Fit Training Tee,Nike,T-Shirts,Grey,S,27.13,4,126,Moisture-wicking performance tee for workouts,https://example.com/images/dry_fit_training_tee_grey.jpg
+40,Windbreaker Jacket,Nike,Jackets,White,XL,60.43,4.8,106,Packable windbreaker with full zip and hood,https://example.com/images/windbreaker_jacket_white.jpg
+41,Printed Band Tee,Pepe Jeans,T-Shirts,White,XL,19.9,3.9,89,Rock-inspired graphic tee with vintage print,https://example.com/images/printed_band_tee_white.jpg
+42,Track Jacket,Adidas,Jackets,Navy,S,61.47,4.7,100,Retro-inspired track jacket with snap button closure,https://example.com/images/track_jacket_navy.jpg
+43,Longline Tee,ASOS,T-Shirts,Charcoal,L,14.04,4.5,149,Extended length cotton tee for a layered look,https://example.com/images/longline_tee_charcoal.jpg
+44,Laptop Backpack,Samsonite,Bags,Navy,20L,88.77,4.4,67,Padded laptop compartment backpack with USB port,https://example.com/images/laptop_backpack_navy.jpg
+45,Track Jacket,Adidas,Jackets,White,XL,56,4.8,28,Retro-inspired track jacket with snap button closure,https://example.com/images/track_jacket_white.jpg
+46,Windbreaker Jacket,Nike,Jackets,Black,XL,64.63,4.6,122,Packable windbreaker with full zip and hood,https://example.com/images/windbreaker_jacket_black.jpg
+47,Graphic Print Hoodie,Puma,Hoodies,Red,M,40.13,4.4,75,Bold graphic hoodie with a fleece-lined interior,https://example.com/images/graphic_print_hoodie_red.jpg
+48,Laptop Backpack,Samsonite,Bags,Navy,15L,68.01,4.3,100,Padded laptop compartment backpack with USB port,https://example.com/images/laptop_backpack_navy.jpg
+49,Wide Leg Jeans,ASOS,Jeans,Blue,S,36.99,4,23,Wide leg jeans with a high rise and full leg,https://example.com/images/wide_leg_jeans_blue.jpg
+50,Denim Trucker Jacket,Levi's,Jackets,Black,M,78.86,4.6,12,Classic denim trucker jacket with chest pockets,https://example.com/images/denim_trucker_jacket_black.jpg
+51,Longline Tee,ASOS,T-Shirts,Charcoal,XL,18.97,3.9,59,Extended length cotton tee for a layered look,https://example.com/images/longline_tee_charcoal.jpg
+52,Vintage Wash Hoodie,Levi's,Hoodies,Rust,S,46.27,4.7,130,Garment-washed hoodie with lived-in softness,https://example.com/images/vintage_wash_hoodie_rust.jpg
+53,Stan Smith,Adidas,Shoes,White/Green,43,65.34,4.9,134,Clean leather tennis sneaker with perforated 3-stripes,https://example.com/images/stan_smith_white_green.jpg
+54,Air Force 1,Nike,Shoes,Red,42,92.23,4.9,128,Iconic low-top sneaker with foam cushioning,https://example.com/images/air_force_1_red.jpg
+55,Striped Crew Neck Tee,Zara,T-Shirts,Black/White,XS,20.11,4.9,147,Breton stripe cotton tee with a relaxed fit,https://example.com/images/striped_crew_neck_tee_black_white.jpg
+56,Street Style Hoodie,Zara,Hoodies,Black,L,35.42,4.6,66,Soft fleece hoodie with tonal embroidered logo,https://example.com/images/street_style_hoodie_black.jpg
+57,Old Skool,Vans,Shoes,Navy/White,42,69,3.8,106,Side-stripe skate shoe in suede and canvas,https://example.com/images/old_skool_navy_white.jpg
+58,574 Core,New Balance,Shoes,Green,45,80.22,4.2,57,Everyday heritage runner with ENCAP midsole,https://example.com/images/574_core_green.jpg
+59,Rain Jacket,Patagonia,Jackets,Black,XL,147.64,4.2,51,Waterproof rain jacket with taped seams and hood,https://example.com/images/rain_jacket_black.jpg
+60,Carpenter Jeans,Dickies,Jeans,Black,32,46.99,4.2,91,Durable carpenter jeans with hammer loop and tool pockets,https://example.com/images/carpenter_jeans_black.jpg
+61,Tech Fabric Tee,Under Armour,T-Shirts,Navy,M,22.22,4.6,107,Anti-odor tech fabric tee for active use,https://example.com/images/tech_fabric_tee_navy.jpg
+62,Wool Blend Overcoat,Massimo Dutti,Jackets,Navy,XL,198.35,4.8,98,Tailored wool blend overcoat for smart occasions,https://example.com/images/wool_blend_overcoat_navy.jpg
+63,Graphic Print Hoodie,Puma,Hoodies,White,M,41.91,4.7,75,Bold graphic hoodie with a fleece-lined interior,https://example.com/images/graphic_print_hoodie_white.jpg
+64,Carpenter Jeans,Dickies,Jeans,Khaki,38,59.61,3.9,139,Durable carpenter jeans with hammer loop and tool pockets,https://example.com/images/carpenter_jeans_khaki.jpg
+65,Essential V-Neck Tee,Uniqlo,T-Shirts,Cream,M,16.76,4.7,114,Soft ribbed v-neck for everyday comfort,https://example.com/images/essential_v_neck_tee_cream.jpg
+66,Dry-Fit Training Tee,Nike,T-Shirts,Black,S,30.87,4.1,61,Moisture-wicking performance tee for workouts,https://example.com/images/dry_fit_training_tee_black.jpg
+67,Puffer Jacket,The North Face,Jackets,Olive,L,149.29,4.6,43,Insulated puffer jacket for cold weather,https://example.com/images/puffer_jacket_olive.jpg
+68,Drawstring Gymsack,Nike,Bags,Red,One Size,20.51,3.8,140,Lightweight polyester gymsack for gym and sports,https://example.com/images/drawstring_gymsack_red.jpg
+69,Air Force 1,Nike,Shoes,Black,44,106.05,4.5,12,Iconic low-top sneaker with foam cushioning,https://example.com/images/air_force_1_black.jpg
+70,Bomber Jacket,Alpha Industries,Jackets,Olive,S,102.7,4.3,72,Classic MA-1 bomber jacket with ribbed collar,https://example.com/images/bomber_jacket_olive.jpg
+71,Samba OG,Adidas,Shoes,Black/White,42,94.07,4.2,7,Retro indoor football shoe with gum sole,https://example.com/images/samba_og_black_white.jpg
+72,Printed Band Tee,Pepe Jeans,T-Shirts,White,M,19.03,4.7,5,Rock-inspired graphic tee with vintage print,https://example.com/images/printed_band_tee_white.jpg
+73,Fleece Jacket,Decathlon,Jackets,Grey,XXL,36.53,4.4,24,Lightweight anti-pilling fleece jacket for hiking,https://example.com/images/fleece_jacket_grey.jpg
+74,Chuck Taylor All Star,Converse,Shoes,Red,41,59.14,4,68,Classic high-top canvas sneaker,https://example.com/images/chuck_taylor_all_star_red.jpg
+75,Straight Cut Jeans,Tommy Hilfiger,Jeans,Dark Blue,30,68.35,4.7,145,Clean straight cut with signature flag detail,https://example.com/images/straight_cut_jeans_dark_blue.jpg
+76,Puffer Jacket,The North Face,Jackets,Navy,S,143.8,4.7,111,Insulated puffer jacket for cold weather,https://example.com/images/puffer_jacket_navy.jpg
+77,Slim Tapered Jeans,G-Star Raw,Jeans,Black,28,82.29,4.3,19,Slim tapered 3D crafted denim for a modern silhouette,https://example.com/images/slim_tapered_jeans_black.jpg
+78,Straight Leg Jeans,Levi's 501,Jeans,Black,32,72.29,4.4,123,Iconic straight cut with button fly,https://example.com/images/straight_leg_jeans_black.jpg
+79,Polo Shirt,Ralph Lauren,T-Shirts,Navy,XXL,64.95,3.9,10,Classic pique cotton polo with embroidered logo,https://example.com/images/polo_shirt_navy.jpg
+80,Stan Smith,Adidas,Shoes,White/Green,40,77.19,4.9,85,Clean leather tennis sneaker with perforated 3-stripes,https://example.com/images/stan_smith_white_green.jpg
+81,Athletic Hoodie,Reebok,Hoodies,Red,M,49.94,4.6,78,Moisture-wicking hoodie built for training sessions,https://example.com/images/athletic_hoodie_red.jpg
+82,Club C 85,Reebok,Shoes,White/Green,40,72.23,4.7,86,Clean leather court classic with chalk outsole,https://example.com/images/club_c_85_white_green.jpg
+83,Sports Duffel,Under Armour,Bags,Navy,50L,48.9,4,32,Ventilated duffel with separate wet/dry compartment,https://example.com/images/sports_duffel_navy.jpg
+84,High Rise Mom Jeans,H&M,Jeans,Light Blue,M,38.84,4.9,111,High-waisted mom jeans with a relaxed fit,https://example.com/images/high_rise_mom_jeans_light_blue.jpg
+85,Oversized Graphic Tee,H&M,T-Shirts,Olive,S,20.35,5,101,Relaxed-fit graphic tee with bold print,https://example.com/images/oversized_graphic_tee_olive.jpg
+86,Old Skool,Vans,Shoes,Black/White,43,69.66,4,126,Side-stripe skate shoe in suede and canvas,https://example.com/images/old_skool_black_white.jpg
+87,Suede Classic,Puma,Shoes,Team Gold,40,61.69,4.6,17,Iconic suede sneaker with Formstrip detail,https://example.com/images/suede_classic_team_gold.jpg
+88,Sherpa Lined Hoodie,Columbia,Hoodies,Charcoal,S,62.04,3.8,77,Cozy sherpa-lined hoodie for cold days,https://example.com/images/sherpa_lined_hoodie_charcoal.jpg
+89,Carpenter Jeans,Dickies,Jeans,Dark Wash,30,53.15,4.7,134,Durable carpenter jeans with hammer loop and tool pockets,https://example.com/images/carpenter_jeans_dark_wash.jpg
+90,Fleece Jacket,Decathlon,Jackets,Green,XL,37.65,3.9,135,Lightweight anti-pilling fleece jacket for hiking,https://example.com/images/fleece_jacket_green.jpg
+91,Denim Trucker Jacket,Levi's,Jackets,Light Wash,XL,71.49,4.7,72,Classic denim trucker jacket with chest pockets,https://example.com/images/denim_trucker_jacket_light_wash.jpg
+92,Pullover Fleece Hoodie,Champion,Hoodies,Maroon,M,46.84,4.8,140,Heavyweight reverse weave hoodie with kangaroo pocket,https://example.com/images/pullover_fleece_hoodie_maroon.jpg
+93,Oversized Graphic Tee,H&M,T-Shirts,Black,M,20.6,4.7,144,Relaxed-fit graphic tee with bold print,https://example.com/images/oversized_graphic_tee_black.jpg
+94,Gel-Lyte III,Asics,Shoes,White/Red,42,85.21,4.9,111,Retro running shoe with split tongue design,https://example.com/images/gel_lyte_iii_white_red.jpg
+95,Slim Fit Hoodie,H&M,Hoodies,Black,S,24.84,3.9,66,Slim cut jersey hoodie with adjustable drawstring,https://example.com/images/slim_fit_hoodie_black.jpg
+96,Essential V-Neck Tee,Uniqlo,T-Shirts,Navy,M,14.13,4.2,73,Soft ribbed v-neck for everyday comfort,https://example.com/images/essential_v_neck_tee_navy.jpg
+97,Windbreaker Jacket,Nike,Jackets,White,L,71.43,4.5,80,Packable windbreaker with full zip and hood,https://example.com/images/windbreaker_jacket_white.jpg
+98,High Rise Mom Jeans,H&M,Jeans,Black,L,36.38,4.5,21,High-waisted mom jeans with a relaxed fit,https://example.com/images/high_rise_mom_jeans_black.jpg
+99,Polo Shirt,Ralph Lauren,T-Shirts,Navy,L,74.25,4.3,100,Classic pique cotton polo with embroidered logo,https://example.com/images/polo_shirt_navy.jpg
+100,Samba OG,Adidas,Shoes,Cream,42,82.34,4.1,39,Retro indoor football shoe with gum sole,https://example.com/images/samba_og_cream.jpg
+101,Track Jacket,Adidas,Jackets,Navy,M,67.17,4.5,148,Retro-inspired track jacket with snap button closure,https://example.com/images/track_jacket_navy.jpg
+102,Slim Fit Hoodie,H&M,Hoodies,Grey,XL,29.35,4.8,23,Slim cut jersey hoodie with adjustable drawstring,https://example.com/images/slim_fit_hoodie_grey.jpg
+103,Stan Smith,Adidas,Shoes,White/Navy,42,76.45,4.2,107,Clean leather tennis sneaker with perforated 3-stripes,https://example.com/images/stan_smith_white_navy.jpg
+104,Athletic Hoodie,Reebok,Hoodies,Black,S,53.63,4.7,49,Moisture-wicking hoodie built for training sessions,https://example.com/images/athletic_hoodie_black.jpg
+105,Gel-Lyte III,Asics,Shoes,White/Red,44,87.59,4.8,132,Retro running shoe with split tongue design,https://example.com/images/gel_lyte_iii_white_red.jpg
+106,Windbreaker Jacket,Nike,Jackets,Blue,M,78.01,4.6,45,Packable windbreaker with full zip and hood,https://example.com/images/windbreaker_jacket_blue.jpg
+107,Leather Biker Jacket,Schott NYC,Jackets,Brown,L,201.1,4.6,12,Genuine leather moto jacket with asymmetric zip,https://example.com/images/leather_biker_jacket_brown.jpg
+108,574 Core,New Balance,Shoes,Navy,41,82.46,4,148,Everyday heritage runner with ENCAP midsole,https://example.com/images/574_core_navy.jpg
+109,Tech Fabric Tee,Under Armour,T-Shirts,White,M,29.25,4.1,46,Anti-odor tech fabric tee for active use,https://example.com/images/tech_fabric_tee_white.jpg
+110,Oversized Hoodie,Fear of God Essentials,Hoodies,Black,XL,83.67,4.3,99,Dropped shoulder oversized hoodie with rubber logo,https://example.com/images/oversized_hoodie_black.jpg
+111,Slim Fit Hoodie,H&M,Hoodies,Black,XL,25.03,4.1,77,Slim cut jersey hoodie with adjustable drawstring,https://example.com/images/slim_fit_hoodie_black.jpg
+112,Skinny Jeans,Zara,Jeans,Black,XS,38.21,4.4,43,Stretch skinny jeans with five-pocket styling,https://example.com/images/skinny_jeans_black.jpg
+113,574 Core,New Balance,Shoes,Grey,44,83.43,4.8,28,Everyday heritage runner with ENCAP midsole,https://example.com/images/574_core_grey.jpg
+114,Fleece Jacket,Decathlon,Jackets,Black,M,40.63,4.3,34,Lightweight anti-pilling fleece jacket for hiking,https://example.com/images/fleece_jacket_black.jpg
+115,Graphic Print Hoodie,Puma,Hoodies,Red,S,42.95,4.2,82,Bold graphic hoodie with a fleece-lined interior,https://example.com/images/graphic_print_hoodie_red.jpg
+116,Tech Fabric Tee,Under Armour,T-Shirts,White,L,29.75,4.8,110,Anti-odor tech fabric tee for active use,https://example.com/images/tech_fabric_tee_white.jpg
+117,574 Core,New Balance,Shoes,Green,41,83.29,4.5,77,Everyday heritage runner with ENCAP midsole,https://example.com/images/574_core_green.jpg
+118,Slim Tapered Jeans,G-Star Raw,Jeans,Black,30,71.49,4.6,98,Slim tapered 3D crafted denim for a modern silhouette,https://example.com/images/slim_tapered_jeans_black.jpg
+119,Hiking Backpack,Quechua,Bags,Grey,30L,36.33,4.5,88,Ergonomic hiking backpack with hydration sleeve,https://example.com/images/hiking_backpack_grey.jpg
+120,Graphic Print Hoodie,Puma,Hoodies,Red,L,40.45,3.9,79,Bold graphic hoodie with a fleece-lined interior,https://example.com/images/graphic_print_hoodie_red.jpg
+121,Carpenter Jeans,Dickies,Jeans,Dark Wash,34,45.64,4.3,100,Durable carpenter jeans with hammer loop and tool pockets,https://example.com/images/carpenter_jeans_dark_wash.jpg
+122,Printed Band Tee,Pepe Jeans,T-Shirts,Black,S,19.64,3.8,71,Rock-inspired graphic tee with vintage print,https://example.com/images/printed_band_tee_black.jpg
+123,Acid Wash Tee,Levi's,T-Shirts,Grey,M,26.53,4.1,18,Vintage-inspired acid wash tee with faded finish,https://example.com/images/acid_wash_tee_grey.jpg
+124,Acid Wash Tee,Levi's,T-Shirts,Blue,M,29.51,3.9,39,Vintage-inspired acid wash tee with faded finish,https://example.com/images/acid_wash_tee_blue.jpg
+125,Travel Duffle,The North Face,Bags,Black,50L,100.3,4.4,103,Durable duffle bag for weekend trips and gym use,https://example.com/images/travel_duffle_black.jpg
+126,Track Jacket,Adidas,Jackets,Black,M,56.48,4.6,146,Retro-inspired track jacket with snap button closure,https://example.com/images/track_jacket_black.jpg
+127,Gel-Lyte III,Asics,Shoes,Black/Black,42,89.21,4.7,95,Retro running shoe with split tongue design,https://example.com/images/gel_lyte_iii_black_black.jpg
+128,Fresh Foam 1080,New Balance,Shoes,White,45,141.69,4.3,5,Premium cushioned running shoe for long distances,https://example.com/images/fresh_foam_1080_white.jpg
+129,Gel-Lyte III,Asics,Shoes,Black/Black,44,83.67,4.9,20,Retro running shoe with split tongue design,https://example.com/images/gel_lyte_iii_black_black.jpg
+130,Gel-Lyte III,Asics,Shoes,Black/Black,43,83.38,4.7,130,Retro running shoe with split tongue design,https://example.com/images/gel_lyte_iii_black_black.jpg
+131,Suede Classic,Puma,Shoes,Team Gold,43,57.09,5,64,Iconic suede sneaker with Formstrip detail,https://example.com/images/suede_classic_team_gold.jpg
+132,Gel-Lyte III,Asics,Shoes,White/Red,41,97.27,4.7,9,Retro running shoe with split tongue design,https://example.com/images/gel_lyte_iii_white_red.jpg
+133,Tote Bag,Longchamp,Bags,Caramel,S,67.37,4.1,144,Foldable nylon tote bag with leather handles,https://example.com/images/tote_bag_caramel.jpg
+134,Dry-Fit Training Tee,Nike,T-Shirts,Black,XL,25.7,4.1,129,Moisture-wicking performance tee for workouts,https://example.com/images/dry_fit_training_tee_black.jpg
+135,Straight Cut Jeans,Tommy Hilfiger,Jeans,Black,34,57.5,4.2,23,Clean straight cut with signature flag detail,https://example.com/images/straight_cut_jeans_black.jpg
+136,Linen Blend Tee,Massimo Dutti,T-Shirts,Navy,S,35.53,4,102,Breathable linen cotton blend tee for warm weather,https://example.com/images/linen_blend_tee_navy.jpg
+137,Fresh Foam 1080,New Balance,Shoes,Blue,42,149.81,4.9,22,Premium cushioned running shoe for long distances,https://example.com/images/fresh_foam_1080_blue.jpg
+138,Relaxed Tapered Jeans,Uniqlo,Jeans,Indigo,30,40.37,4.2,38,Relaxed through hip and thigh with tapered leg,https://example.com/images/relaxed_tapered_jeans_indigo.jpg
+139,High Rise Mom Jeans,H&M,Jeans,White,M,39.16,4.4,40,High-waisted mom jeans with a relaxed fit,https://example.com/images/high_rise_mom_jeans_white.jpg
+140,Windbreaker Jacket,Nike,Jackets,Orange,L,75.5,4.1,95,Packable windbreaker with full zip and hood,https://example.com/images/windbreaker_jacket_orange.jpg
+141,Air Force 1,Nike,Shoes,Navy,45,88.51,3.9,103,Iconic low-top sneaker with foam cushioning,https://example.com/images/air_force_1_navy.jpg
+142,Slim Tapered Jeans,G-Star Raw,Jeans,Firro Grey,28,80.9,4.2,25,Slim tapered 3D crafted denim for a modern silhouette,https://example.com/images/slim_tapered_jeans_firro_grey.jpg
+143,Vintage Wash Hoodie,Levi's,Hoodies,Faded Black,XL,53.33,4.4,53,Garment-washed hoodie with lived-in softness,https://example.com/images/vintage_wash_hoodie_faded_black.jpg
+144,Skinny Jeans,Zara,Jeans,Dark Blue,XS,40.23,4.5,98,Stretch skinny jeans with five-pocket styling,https://example.com/images/skinny_jeans_dark_blue.jpg
+145,Air Force 1,Nike,Shoes,Red,43,91.11,4.8,108,Iconic low-top sneaker with foam cushioning,https://example.com/images/air_force_1_red.jpg
+146,Wool Blend Overcoat,Massimo Dutti,Jackets,Navy,S,198.36,4.2,91,Tailored wool blend overcoat for smart occasions,https://example.com/images/wool_blend_overcoat_navy.jpg
+147,Carpenter Jeans,Dickies,Jeans,Khaki,30,45.24,4.4,66,Durable carpenter jeans with hammer loop and tool pockets,https://example.com/images/carpenter_jeans_khaki.jpg
+148,Leather Biker Jacket,Schott NYC,Jackets,Tan,XL,229.84,4.3,140,Genuine leather moto jacket with asymmetric zip,https://example.com/images/leather_biker_jacket_tan.jpg
+149,Essential V-Neck Tee,Uniqlo,T-Shirts,Navy,S,14.94,4.6,98,Soft ribbed v-neck for everyday comfort,https://example.com/images/essential_v_neck_tee_navy.jpg
+150,Acid Wash Tee,Levi's,T-Shirts,Grey,L,23.64,4.3,75,Vintage-inspired acid wash tee with faded finish,https://example.com/images/acid_wash_tee_grey.jpg
+151,Slim Tapered Jeans,G-Star Raw,Jeans,Firro Grey,30,76.55,4.2,119,Slim tapered 3D crafted denim for a modern silhouette,https://example.com/images/slim_tapered_jeans_firro_grey.jpg
+152,Vintage Wash Hoodie,Levi's,Hoodies,Rust,M,53.32,4.1,126,Garment-washed hoodie with lived-in softness,https://example.com/images/vintage_wash_hoodie_rust.jpg
+153,Old Skool,Vans,Shoes,Navy/White,39,59.81,4.6,27,Side-stripe skate shoe in suede and canvas,https://example.com/images/old_skool_navy_white.jpg
+154,Pullover Fleece Hoodie,Champion,Hoodies,Grey,XL,44.11,3.9,78,Heavyweight reverse weave hoodie with kangaroo pocket,https://example.com/images/pullover_fleece_hoodie_grey.jpg
+155,Club C 85,Reebok,Shoes,White/Green,41,68.65,4.7,87,Clean leather court classic with chalk outsole,https://example.com/images/club_c_85_white_green.jpg
+156,Stan Smith,Adidas,Shoes,White/Navy,43,65.76,4.5,97,Clean leather tennis sneaker with perforated 3-stripes,https://example.com/images/stan_smith_white_navy.jpg
+157,Straight Cut Jeans,Tommy Hilfiger,Jeans,Medium Wash,34,66.44,4.4,146,Clean straight cut with signature flag detail,https://example.com/images/straight_cut_jeans_medium_wash.jpg
+158,Tote Bag,Longchamp,Bags,Navy,S,59.03,4.6,48,Foldable nylon tote bag with leather handles,https://example.com/images/tote_bag_navy.jpg
+159,Tech Fleece Hoodie,Nike,Hoodies,Black,S,89.6,4.4,105,Slim fit tech fleece hoodie with bonded fabric,https://example.com/images/tech_fleece_hoodie_black.jpg
+160,Club C 85,Reebok,Shoes,White/Navy,40,69.38,4.3,131,Clean leather court classic with chalk outsole,https://example.com/images/club_c_85_white_navy.jpg
+161,Oversized Hoodie,Fear of God Essentials,Hoodies,Black,L,94.9,4.5,15,Dropped shoulder oversized hoodie with rubber logo,https://example.com/images/oversized_hoodie_black.jpg
+162,Rain Jacket,Patagonia,Jackets,Black,XS,131.02,4.7,62,Waterproof rain jacket with taped seams and hood,https://example.com/images/rain_jacket_black.jpg
+163,Acid Wash Tee,Levi's,T-Shirts,Pink,L,23.77,4.9,43,Vintage-inspired acid wash tee with faded finish,https://example.com/images/acid_wash_tee_pink.jpg
+164,Wide Leg Jeans,ASOS,Jeans,Ecru,M,39.98,4.3,148,Wide leg jeans with a high rise and full leg,https://example.com/images/wide_leg_jeans_ecru.jpg
+165,Striped Crew Neck Tee,Zara,T-Shirts,Red/White,M,22.25,3.9,22,Breton stripe cotton tee with a relaxed fit,https://example.com/images/striped_crew_neck_tee_red_white.jpg
+166,Denim Trucker Jacket,Levi's,Jackets,Light Wash,M,88.2,3.8,41,Classic denim trucker jacket with chest pockets,https://example.com/images/denim_trucker_jacket_light_wash.jpg
+167,Fresh Foam 1080,New Balance,Shoes,White,43,135.39,4.3,19,Premium cushioned running shoe for long distances,https://example.com/images/fresh_foam_1080_white.jpg
+168,Samba OG,Adidas,Shoes,White/Black,44,83.01,3.9,40,Retro indoor football shoe with gum sole,https://example.com/images/samba_og_white_black.jpg
+169,Air Force 1,Nike,Shoes,Red,40,101.27,4.7,111,Iconic low-top sneaker with foam cushioning,https://example.com/images/air_force_1_red.jpg
+170,Softshell Jacket,Columbia,Jackets,Black,M,92.3,4.9,76,Stretchy softshell jacket for outdoor activities,https://example.com/images/softshell_jacket_black.jpg
+171,Relaxed Tapered Jeans,Uniqlo,Jeans,Dark Navy,34,40.92,4.6,135,Relaxed through hip and thigh with tapered leg,https://example.com/images/relaxed_tapered_jeans_dark_navy.jpg
+172,Acid Wash Tee,Levi's,T-Shirts,Blue,L,24.84,4.9,146,Vintage-inspired acid wash tee with faded finish,https://example.com/images/acid_wash_tee_blue.jpg
+173,Longline Tee,ASOS,T-Shirts,Stone,M,18.39,4.9,99,Extended length cotton tee for a layered look,https://example.com/images/longline_tee_stone.jpg
+174,Air Force 1,Nike,Shoes,Black,41,91.85,4.6,141,Iconic low-top sneaker with foam cushioning,https://example.com/images/air_force_1_black.jpg
+175,574 Core,New Balance,Shoes,Green,44,74.31,4.8,125,Everyday heritage runner with ENCAP midsole,https://example.com/images/574_core_green.jpg
+176,Rain Jacket,Patagonia,Jackets,Yellow,L,132.58,4.2,99,Waterproof rain jacket with taped seams and hood,https://example.com/images/rain_jacket_yellow.jpg
+177,Graphic Print Hoodie,Puma,Hoodies,White,L,47.24,5,139,Bold graphic hoodie with a fleece-lined interior,https://example.com/images/graphic_print_hoodie_white.jpg
+178,Oversized Graphic Tee,H&M,T-Shirts,Grey,XL,21.03,4.8,122,Relaxed-fit graphic tee with bold print,https://example.com/images/oversized_graphic_tee_grey.jpg
+179,Distressed Slim Jeans,Pepe Jeans,Jeans,Grey,28,63.09,3.9,128,Slim fit jeans with authentic rip and distress details,https://example.com/images/distressed_slim_jeans_grey.jpg
+180,Straight Leg Jeans,Levi's 501,Jeans,Medium Wash,28,73.61,4.9,87,Iconic straight cut with button fly,https://example.com/images/straight_leg_jeans_medium_wash.jpg
+181,Dry-Fit Training Tee,Nike,T-Shirts,Black,L,27.28,4.9,89,Moisture-wicking performance tee for workouts,https://example.com/images/dry_fit_training_tee_black.jpg
+182,Chuck Taylor All Star,Converse,Shoes,Black,38,57.85,4.7,102,Classic high-top canvas sneaker,https://example.com/images/chuck_taylor_all_star_black.jpg
+183,Fleece Jacket,Decathlon,Jackets,Black,XL,42.01,4.5,97,Lightweight anti-pilling fleece jacket for hiking,https://example.com/images/fleece_jacket_black.jpg
+184,Street Style Hoodie,Zara,Hoodies,Black,M,41.56,4.6,36,Soft fleece hoodie with tonal embroidered logo,https://example.com/images/street_style_hoodie_black.jpg
+185,Track Jacket,Adidas,Jackets,White,M,61.39,4.6,100,Retro-inspired track jacket with snap button closure,https://example.com/images/track_jacket_white.jpg
+186,Dry-Fit Training Tee,Nike,T-Shirts,Royal Blue,M,25.6,4.7,32,Moisture-wicking performance tee for workouts,https://example.com/images/dry_fit_training_tee_royal_blue.jpg
+187,Straight Cut Jeans,Tommy Hilfiger,Jeans,Black,30,61.18,5,127,Clean straight cut with signature flag detail,https://example.com/images/straight_cut_jeans_black.jpg
+188,Longline Tee,ASOS,T-Shirts,Stone,L,15.41,4.3,144,Extended length cotton tee for a layered look,https://example.com/images/longline_tee_stone.jpg
+189,Street Style Hoodie,Zara,Hoodies,Off White,M,44.85,4.5,110,Soft fleece hoodie with tonal embroidered logo,https://example.com/images/street_style_hoodie_off_white.jpg
+190,Fresh Foam 1080,New Balance,Shoes,Blue,44,132.26,4.7,112,Premium cushioned running shoe for long distances,https://example.com/images/fresh_foam_1080_blue.jpg
+191,Oversized Hoodie,Fear of God Essentials,Hoodies,Oatmeal,XS,98.68,4.4,70,Dropped shoulder oversized hoodie with rubber logo,https://example.com/images/oversized_hoodie_oatmeal.jpg
+192,Straight Leg Jeans,Levi's 501,Jeans,Black,28,60.74,4.2,78,Iconic straight cut with button fly,https://example.com/images/straight_leg_jeans_black.jpg
+193,Longline Tee,ASOS,T-Shirts,Stone,S,16.52,4,94,Extended length cotton tee for a layered look,https://example.com/images/longline_tee_stone.jpg
+194,Printed Band Tee,Pepe Jeans,T-Shirts,White,L,21.15,4.8,55,Rock-inspired graphic tee with vintage print,https://example.com/images/printed_band_tee_white.jpg
+195,Sherpa Lined Hoodie,Columbia,Hoodies,Cream,M,63.02,4.8,82,Cozy sherpa-lined hoodie for cold days,https://example.com/images/sherpa_lined_hoodie_cream.jpg
+196,Suede Classic,Puma,Shoes,Navy,43,55.47,4.6,9,Iconic suede sneaker with Formstrip detail,https://example.com/images/suede_classic_navy.jpg
+197,Essential V-Neck Tee,Uniqlo,T-Shirts,Navy,L,17.9,4.6,23,Soft ribbed v-neck for everyday comfort,https://example.com/images/essential_v_neck_tee_navy.jpg
+198,Bomber Jacket,Alpha Industries,Jackets,Navy,L,104.06,4.3,143,Classic MA-1 bomber jacket with ribbed collar,https://example.com/images/bomber_jacket_navy.jpg
+199,Pullover Fleece Hoodie,Champion,Hoodies,Black,M,50.77,4.3,107,Heavyweight reverse weave hoodie with kangaroo pocket,https://example.com/images/pullover_fleece_hoodie_black.jpg
+200,Tech Fleece Hoodie,Nike,Hoodies,Olive,M,85.07,4.9,56,Slim fit tech fleece hoodie with bonded fabric,https://example.com/images/tech_fleece_hoodie_olive.jpg
+201,Puffer Jacket,The North Face,Jackets,Red,L,148.85,4.9,53,Insulated puffer jacket for cold weather,https://example.com/images/puffer_jacket_red.jpg
+202,Puffer Jacket,The North Face,Jackets,Navy,M,146.98,4.7,73,Insulated puffer jacket for cold weather,https://example.com/images/puffer_jacket_navy.jpg
+203,Travel Duffle,The North Face,Bags,Black,70L,102.66,4,25,Durable duffle bag for weekend trips and gym use,https://example.com/images/travel_duffle_black.jpg
+204,High Rise Mom Jeans,H&M,Jeans,Black,S,34.22,4.7,65,High-waisted mom jeans with a relaxed fit,https://example.com/images/high_rise_mom_jeans_black.jpg
+205,Straight Leg Jeans,Levi's 501,Jeans,Medium Wash,34,75.92,4.5,95,Iconic straight cut with button fly,https://example.com/images/straight_leg_jeans_medium_wash.jpg
+206,Longline Tee,ASOS,T-Shirts,Black,M,17.09,4.3,149,Extended length cotton tee for a layered look,https://example.com/images/longline_tee_black.jpg
+207,Distressed Slim Jeans,Pepe Jeans,Jeans,Black,32,57.53,4.3,46,Slim fit jeans with authentic rip and distress details,https://example.com/images/distressed_slim_jeans_black.jpg
+208,Bootcut Jeans,Wrangler,Jeans,Dark Wash,32,53.28,4.2,84,Classic bootcut with a comfortable regular waist,https://example.com/images/bootcut_jeans_dark_wash.jpg
+209,Sports Duffel,Under Armour,Bags,Navy,30L,43.77,4.1,131,Ventilated duffel with separate wet/dry compartment,https://example.com/images/sports_duffel_navy.jpg
+210,Puffer Jacket,The North Face,Jackets,Navy,XL,171.86,4.5,130,Insulated puffer jacket for cold weather,https://example.com/images/puffer_jacket_navy.jpg
+211,Bomber Jacket,Alpha Industries,Jackets,Black,M,127.45,4.1,21,Classic MA-1 bomber jacket with ribbed collar,https://example.com/images/bomber_jacket_black.jpg
+212,574 Core,New Balance,Shoes,Navy,43,71.05,4.9,59,Everyday heritage runner with ENCAP midsole,https://example.com/images/574_core_navy.jpg
+213,Air Force 1,Nike,Shoes,Red,45,88.94,4.3,123,Iconic low-top sneaker with foam cushioning,https://example.com/images/air_force_1_red.jpg
+214,Straight Leg Jeans,Levi's 501,Jeans,Dark Wash,36,69.27,4.5,119,Iconic straight cut with button fly,https://example.com/images/straight_leg_jeans_dark_wash.jpg
+215,Longline Tee,ASOS,T-Shirts,Stone,XL,17.51,4.5,140,Extended length cotton tee for a layered look,https://example.com/images/longline_tee_stone.jpg
+216,Gel-Lyte III,Asics,Shoes,Black/Black,41,85.14,4.8,130,Retro running shoe with split tongue design,https://example.com/images/gel_lyte_iii_black_black.jpg
+217,Air Force 1,Nike,Shoes,Black,40,106.14,4.1,146,Iconic low-top sneaker with foam cushioning,https://example.com/images/air_force_1_black.jpg
+218,Puffer Jacket,The North Face,Jackets,Olive,S,141.67,4.7,16,Insulated puffer jacket for cold weather,https://example.com/images/puffer_jacket_olive.jpg
+219,Denim Trucker Jacket,Levi's,Jackets,Dark Wash,L,87.44,3.8,22,Classic denim trucker jacket with chest pockets,https://example.com/images/denim_trucker_jacket_dark_wash.jpg
+220,Linen Blend Tee,Massimo Dutti,T-Shirts,Ecru,S,36.22,4.6,36,Breathable linen cotton blend tee for warm weather,https://example.com/images/linen_blend_tee_ecru.jpg
+221,Linen Blend Tee,Massimo Dutti,T-Shirts,Ecru,M,37.19,4.2,84,Breathable linen cotton blend tee for warm weather,https://example.com/images/linen_blend_tee_ecru.jpg
+222,Puffer Jacket,The North Face,Jackets,Navy,L,171.02,4.1,81,Insulated puffer jacket for cold weather,https://example.com/images/puffer_jacket_navy.jpg
+223,Air Force 1,Nike,Shoes,White,41,100.98,4,38,Iconic low-top sneaker with foam cushioning,https://example.com/images/air_force_1_white.jpg
+224,Polo Shirt,Ralph Lauren,T-Shirts,White,S,76.82,4.4,55,Classic pique cotton polo with embroidered logo,https://example.com/images/polo_shirt_white.jpg
+225,Oversized Graphic Tee,H&M,T-Shirts,White,L,21.76,4.9,27,Relaxed-fit graphic tee with bold print,https://example.com/images/oversized_graphic_tee_white.jpg
+226,Wool Blend Overcoat,Massimo Dutti,Jackets,Navy,L,157.03,5,106,Tailored wool blend overcoat for smart occasions,https://example.com/images/wool_blend_overcoat_navy.jpg
+227,Chuck Taylor All Star,Converse,Shoes,Red,36,60.58,4.4,148,Classic high-top canvas sneaker,https://example.com/images/chuck_taylor_all_star_red.jpg
+228,Travel Duffle,The North Face,Bags,Red,70L,109.06,4.2,74,Durable duffle bag for weekend trips and gym use,https://example.com/images/travel_duffle_red.jpg
+229,Oversized Graphic Tee,H&M,T-Shirts,White,XL,20.89,3.8,28,Relaxed-fit graphic tee with bold print,https://example.com/images/oversized_graphic_tee_white.jpg
+230,Slim Tapered Jeans,G-Star Raw,Jeans,Black,32,80.25,4.7,45,Slim tapered 3D crafted denim for a modern silhouette,https://example.com/images/slim_tapered_jeans_black.jpg
+231,Windbreaker Jacket,Nike,Jackets,Orange,XL,64.37,4,69,Packable windbreaker with full zip and hood,https://example.com/images/windbreaker_jacket_orange.jpg
+232,Sports Duffel,Under Armour,Bags,Black,30L,42.53,4.3,40,Ventilated duffel with separate wet/dry compartment,https://example.com/images/sports_duffel_black.jpg
+233,Old Skool,Vans,Shoes,Red/White,42,67.76,4.4,54,Side-stripe skate shoe in suede and canvas,https://example.com/images/old_skool_red_white.jpg
+234,Oversized Hoodie,Fear of God Essentials,Hoodies,Oatmeal,XL,89.38,4.9,101,Dropped shoulder oversized hoodie with rubber logo,https://example.com/images/oversized_hoodie_oatmeal.jpg
+235,Air Force 1,Nike,Shoes,Navy,44,96.65,4.1,68,Iconic low-top sneaker with foam cushioning,https://example.com/images/air_force_1_navy.jpg
+236,Slim Fit Hoodie,H&M,Hoodies,Grey,S,27.91,4.3,64,Slim cut jersey hoodie with adjustable drawstring,https://example.com/images/slim_fit_hoodie_grey.jpg
+237,Distressed Slim Jeans,Pepe Jeans,Jeans,Medium Wash,34,53.5,4.1,125,Slim fit jeans with authentic rip and distress details,https://example.com/images/distressed_slim_jeans_medium_wash.jpg
+238,Pullover Fleece Hoodie,Champion,Hoodies,Maroon,XXL,46.39,4.9,119,Heavyweight reverse weave hoodie with kangaroo pocket,https://example.com/images/pullover_fleece_hoodie_maroon.jpg
+239,Tote Bag,Longchamp,Bags,Red,S,75.78,4.9,63,Foldable nylon tote bag with leather handles,https://example.com/images/tote_bag_red.jpg
+240,Samba OG,Adidas,Shoes,Cream,43,84.55,4.3,100,Retro indoor football shoe with gum sole,https://example.com/images/samba_og_cream.jpg
+241,Old Skool,Vans,Shoes,Black/White,38,57.05,4.5,66,Side-stripe skate shoe in suede and canvas,https://example.com/images/old_skool_black_white.jpg
+242,Slim Fit Hoodie,H&M,Hoodies,Black,L,25.85,4.6,125,Slim cut jersey hoodie with adjustable drawstring,https://example.com/images/slim_fit_hoodie_black.jpg
+243,Essential V-Neck Tee,Uniqlo,T-Shirts,White,S,14.53,4.2,19,Soft ribbed v-neck for everyday comfort,https://example.com/images/essential_v_neck_tee_white.jpg
+244,Dry-Fit Training Tee,Nike,T-Shirts,Grey,L,26.89,3.9,115,Moisture-wicking performance tee for workouts,https://example.com/images/dry_fit_training_tee_grey.jpg
+245,Oversized Graphic Tee,H&M,T-Shirts,Olive,L,20.76,4.6,16,Relaxed-fit graphic tee with bold print,https://example.com/images/oversized_graphic_tee_olive.jpg
+246,Samba OG,Adidas,Shoes,White/Black,40,87.96,4.7,8,Retro indoor football shoe with gum sole,https://example.com/images/samba_og_white_black.jpg
+247,Skinny Jeans,Zara,Jeans,Light Wash,S,37.83,4.7,43,Stretch skinny jeans with five-pocket styling,https://example.com/images/skinny_jeans_light_wash.jpg
+248,Oversized Hoodie,Fear of God Essentials,Hoodies,Oatmeal,S,94.16,4,34,Dropped shoulder oversized hoodie with rubber logo,https://example.com/images/oversized_hoodie_oatmeal.jpg
+249,Fresh Foam 1080,New Balance,Shoes,Black,42,135.76,4.4,97,Premium cushioned running shoe for long distances,https://example.com/images/fresh_foam_1080_black.jpg
+250,Old Skool,Vans,Shoes,Red/White,39,64.03,4.9,90,Side-stripe skate shoe in suede and canvas,https://example.com/images/old_skool_red_white.jpg
+251,Striped Crew Neck Tee,Zara,T-Shirts,Black/White,L,18.29,4.2,17,Breton stripe cotton tee with a relaxed fit,https://example.com/images/striped_crew_neck_tee_black_white.jpg
+252,Essential V-Neck Tee,Uniqlo,T-Shirts,Navy,XS,18.98,4.8,102,Soft ribbed v-neck for everyday comfort,https://example.com/images/essential_v_neck_tee_navy.jpg
+253,Straight Cut Jeans,Tommy Hilfiger,Jeans,Dark Blue,34,69.23,4.9,49,Clean straight cut with signature flag detail,https://example.com/images/straight_cut_jeans_dark_blue.jpg
+254,Tech Fleece Hoodie,Nike,Hoodies,Black,M,81.83,4.6,26,Slim fit tech fleece hoodie with bonded fabric,https://example.com/images/tech_fleece_hoodie_black.jpg
+255,Zip-Up Hoodie,Adidas,Hoodies,White,M,62.84,4.7,102,Three-stripe zip hoodie in French terry cotton,https://example.com/images/zip_up_hoodie_white.jpg
+256,Graphic Print Hoodie,Puma,Hoodies,Black,M,45.52,4.2,145,Bold graphic hoodie with a fleece-lined interior,https://example.com/images/graphic_print_hoodie_black.jpg
+257,Canvas Tote,Zara,Bags,Black,Standard,28.87,3.9,148,Large canvas tote with interior zip pocket,https://example.com/images/canvas_tote_black.jpg
+258,Wide Leg Jeans,ASOS,Jeans,Light Wash,S,38.61,4.9,13,Wide leg jeans with a high rise and full leg,https://example.com/images/wide_leg_jeans_light_wash.jpg
+259,Pullover Fleece Hoodie,Champion,Hoodies,Black,XXL,51.67,4.1,137,Heavyweight reverse weave hoodie with kangaroo pocket,https://example.com/images/pullover_fleece_hoodie_black.jpg
+260,Suede Classic,Puma,Shoes,Team Gold,39,58.6,3.9,13,Iconic suede sneaker with Formstrip detail,https://example.com/images/suede_classic_team_gold.jpg
+261,Striped Crew Neck Tee,Zara,T-Shirts,Red/White,L,21.37,4.1,35,Breton stripe cotton tee with a relaxed fit,https://example.com/images/striped_crew_neck_tee_red_white.jpg
+262,Air Force 1,Nike,Shoes,White,45,93.64,4.9,77,Iconic low-top sneaker with foam cushioning,https://example.com/images/air_force_1_white.jpg
+263,Leather Biker Jacket,Schott NYC,Jackets,Black,L,231.91,4.4,21,Genuine leather moto jacket with asymmetric zip,https://example.com/images/leather_biker_jacket_black.jpg
+264,Skinny Jeans,Zara,Jeans,Light Wash,M,38.32,4.5,41,Stretch skinny jeans with five-pocket styling,https://example.com/images/skinny_jeans_light_wash.jpg
+265,Suede Classic,Puma,Shoes,Team Gold,42,58.51,4.1,19,Iconic suede sneaker with Formstrip detail,https://example.com/images/suede_classic_team_gold.jpg
+266,Wide Leg Jeans,ASOS,Jeans,Light Wash,L,38.71,4.7,40,Wide leg jeans with a high rise and full leg,https://example.com/images/wide_leg_jeans_light_wash.jpg
+267,Polo Shirt,Ralph Lauren,T-Shirts,Sky Blue,XXL,78.24,4.8,81,Classic pique cotton polo with embroidered logo,https://example.com/images/polo_shirt_sky_blue.jpg
+268,Pullover Fleece Hoodie,Champion,Hoodies,Grey,L,51.48,4.4,66,Heavyweight reverse weave hoodie with kangaroo pocket,https://example.com/images/pullover_fleece_hoodie_grey.jpg
+269,Street Style Hoodie,Zara,Hoodies,Off White,S,47.96,4.8,5,Soft fleece hoodie with tonal embroidered logo,https://example.com/images/street_style_hoodie_off_white.jpg
+270,Skinny Jeans,Zara,Jeans,Dark Blue,L,42.88,4.6,21,Stretch skinny jeans with five-pocket styling,https://example.com/images/skinny_jeans_dark_blue.jpg
+271,Striped Crew Neck Tee,Zara,T-Shirts,Black/White,M,19.47,5,143,Breton stripe cotton tee with a relaxed fit,https://example.com/images/striped_crew_neck_tee_black_white.jpg
+272,Track Jacket,Adidas,Jackets,Navy,L,63.42,4.6,110,Retro-inspired track jacket with snap button closure,https://example.com/images/track_jacket_navy.jpg
+273,Mini Backpack,Herschel,Bags,Desert Khaki,Standard,42.78,4.5,102,Compact heritage mini backpack with laptop sleeve,https://example.com/images/mini_backpack_desert_khaki.jpg
+274,Softshell Jacket,Columbia,Jackets,Blue,XL,98.97,4.8,28,Stretchy softshell jacket for outdoor activities,https://example.com/images/softshell_jacket_blue.jpg
+275,Relaxed Tapered Jeans,Uniqlo,Jeans,Light Grey,32,41.91,5,44,Relaxed through hip and thigh with tapered leg,https://example.com/images/relaxed_tapered_jeans_light_grey.jpg
+276,Athletic Hoodie,Reebok,Hoodies,Red,S,49.99,4.6,46,Moisture-wicking hoodie built for training sessions,https://example.com/images/athletic_hoodie_red.jpg
+277,Pullover Fleece Hoodie,Champion,Hoodies,Black,S,46.21,4.6,54,Heavyweight reverse weave hoodie with kangaroo pocket,https://example.com/images/pullover_fleece_hoodie_black.jpg
+278,Athletic Hoodie,Reebok,Hoodies,Red,XL,45.54,3.9,69,Moisture-wicking hoodie built for training sessions,https://example.com/images/athletic_hoodie_red.jpg
+279,Straight Leg Jeans,Levi's 501,Jeans,Dark Wash,30,64.72,4,55,Iconic straight cut with button fly,https://example.com/images/straight_leg_jeans_dark_wash.jpg
+280,High Rise Mom Jeans,H&M,Jeans,White,S,37.9,4,78,High-waisted mom jeans with a relaxed fit,https://example.com/images/high_rise_mom_jeans_white.jpg
+281,Essential V-Neck Tee,Uniqlo,T-Shirts,Navy,XL,17.25,4,67,Soft ribbed v-neck for everyday comfort,https://example.com/images/essential_v_neck_tee_navy.jpg
+282,Tech Fabric Tee,Under Armour,T-Shirts,Black,L,28.98,4.1,68,Anti-odor tech fabric tee for active use,https://example.com/images/tech_fabric_tee_black.jpg
+283,Linen Blend Tee,Massimo Dutti,T-Shirts,Ecru,L,36.66,4.2,80,Breathable linen cotton blend tee for warm weather,https://example.com/images/linen_blend_tee_ecru.jpg
+284,Oversized Graphic Tee,H&M,T-Shirts,Black,XL,23.08,3.8,45,Relaxed-fit graphic tee with bold print,https://example.com/images/oversized_graphic_tee_black.jpg
+285,Essential V-Neck Tee,Uniqlo,T-Shirts,Black,L,16.69,5,7,Soft ribbed v-neck for everyday comfort,https://example.com/images/essential_v_neck_tee_black.jpg
+286,Rain Jacket,Patagonia,Jackets,Blue,M,128.15,4.6,129,Waterproof rain jacket with taped seams and hood,https://example.com/images/rain_jacket_blue.jpg
+287,574 Core,New Balance,Shoes,Navy,42,69.33,4.1,90,Everyday heritage runner with ENCAP midsole,https://example.com/images/574_core_navy.jpg
+288,Slim Fit Hoodie,H&M,Hoodies,Grey,M,29.46,4.7,55,Slim cut jersey hoodie with adjustable drawstring,https://example.com/images/slim_fit_hoodie_grey.jpg
+289,Longline Tee,ASOS,T-Shirts,Charcoal,S,15.97,4.6,81,Extended length cotton tee for a layered look,https://example.com/images/longline_tee_charcoal.jpg
+290,Stan Smith,Adidas,Shoes,White/Navy,44,73.29,3.9,134,Clean leather tennis sneaker with perforated 3-stripes,https://example.com/images/stan_smith_white_navy.jpg
+291,Graphic Print Hoodie,Puma,Hoodies,Black,XL,43.06,4.1,54,Bold graphic hoodie with a fleece-lined interior,https://example.com/images/graphic_print_hoodie_black.jpg
+292,Oversized Hoodie,Fear of God Essentials,Hoodies,Taupe,L,92.67,4.3,138,Dropped shoulder oversized hoodie with rubber logo,https://example.com/images/oversized_hoodie_taupe.jpg
+293,Suede Classic,Puma,Shoes,Navy,39,66.33,5,123,Iconic suede sneaker with Formstrip detail,https://example.com/images/suede_classic_navy.jpg
+294,Zip-Up Hoodie,Adidas,Hoodies,Black,M,60.4,4.6,21,Three-stripe zip hoodie in French terry cotton,https://example.com/images/zip_up_hoodie_black.jpg
+295,Skinny Jeans,Zara,Jeans,Light Wash,XS,38.29,4.5,103,Stretch skinny jeans with five-pocket styling,https://example.com/images/skinny_jeans_light_wash.jpg
+296,Sports Duffel,Under Armour,Bags,Red,50L,44.49,4.7,97,Ventilated duffel with separate wet/dry compartment,https://example.com/images/sports_duffel_red.jpg
+297,Street Style Hoodie,Zara,Hoodies,Dark Brown,M,41.91,3.9,44,Soft fleece hoodie with tonal embroidered logo,https://example.com/images/street_style_hoodie_dark_brown.jpg
+298,Carpenter Jeans,Dickies,Jeans,Khaki,36,47.8,4.6,139,Durable carpenter jeans with hammer loop and tool pockets,https://example.com/images/carpenter_jeans_khaki.jpg
+299,Athletic Hoodie,Reebok,Hoodies,Black,XL,59.53,4.4,109,Moisture-wicking hoodie built for training sessions,https://example.com/images/athletic_hoodie_black.jpg
+300,Tech Fabric Tee,Under Armour,T-Shirts,Navy,XL,23.5,4.4,142,Anti-odor tech fabric tee for active use,https://example.com/images/tech_fabric_tee_navy.jpg
+301,Dry-Fit Training Tee,Nike,T-Shirts,Black,M,25.06,4.6,20,Moisture-wicking performance tee for workouts,https://example.com/images/dry_fit_training_tee_black.jpg
+302,Oversized Hoodie,Fear of God Essentials,Hoodies,Taupe,M,85.83,4.2,122,Dropped shoulder oversized hoodie with rubber logo,https://example.com/images/oversized_hoodie_taupe.jpg
+303,Fleece Jacket,Decathlon,Jackets,Green,L,33.31,4.7,24,Lightweight anti-pilling fleece jacket for hiking,https://example.com/images/fleece_jacket_green.jpg
+304,Tech Fabric Tee,Under Armour,T-Shirts,Navy,L,23.27,4.8,76,Anti-odor tech fabric tee for active use,https://example.com/images/tech_fabric_tee_navy.jpg
+305,Laptop Backpack,Samsonite,Bags,Grey,20L,65.75,4.4,95,Padded laptop compartment backpack with USB port,https://example.com/images/laptop_backpack_grey.jpg
+306,Pullover Fleece Hoodie,Champion,Hoodies,Maroon,S,46.96,4.5,36,Heavyweight reverse weave hoodie with kangaroo pocket,https://example.com/images/pullover_fleece_hoodie_maroon.jpg
+307,Vintage Wash Hoodie,Levi's,Hoodies,Stone Wash Blue,S,56.61,4.4,73,Garment-washed hoodie with lived-in softness,https://example.com/images/vintage_wash_hoodie_stone_wash_blue.jpg
+308,Acid Wash Tee,Levi's,T-Shirts,Blue,S,23.04,4.8,81,Vintage-inspired acid wash tee with faded finish,https://example.com/images/acid_wash_tee_blue.jpg
+309,Street Style Hoodie,Zara,Hoodies,Off White,XS,39.84,5,108,Soft fleece hoodie with tonal embroidered logo,https://example.com/images/street_style_hoodie_off_white.jpg
+310,Tote Bag,Longchamp,Bags,Navy,M,43.3,4.8,89,Foldable nylon tote bag with leather handles,https://example.com/images/tote_bag_navy.jpg
+311,Straight Cut Jeans,Tommy Hilfiger,Jeans,Dark Blue,32,65.83,4.9,45,Clean straight cut with signature flag detail,https://example.com/images/straight_cut_jeans_dark_blue.jpg
+312,Rain Jacket,Patagonia,Jackets,Black,S,144.21,4.8,147,Waterproof rain jacket with taped seams and hood,https://example.com/images/rain_jacket_black.jpg
+313,Oversized Graphic Tee,H&M,T-Shirts,Olive,M,15.78,4.2,97,Relaxed-fit graphic tee with bold print,https://example.com/images/oversized_graphic_tee_olive.jpg
+314,Bootcut Jeans,Wrangler,Jeans,Medium Wash,32,52.98,4.2,36,Classic bootcut with a comfortable regular waist,https://example.com/images/bootcut_jeans_medium_wash.jpg
+315,Puffer Jacket,The North Face,Jackets,Red,XL,179.03,4.1,103,Insulated puffer jacket for cold weather,https://example.com/images/puffer_jacket_red.jpg
+316,Distressed Slim Jeans,Pepe Jeans,Jeans,Grey,32,60.66,4.4,36,Slim fit jeans with authentic rip and distress details,https://example.com/images/distressed_slim_jeans_grey.jpg
+317,Polo Shirt,Ralph Lauren,T-Shirts,White,L,79.06,4.9,5,Classic pique cotton polo with embroidered logo,https://example.com/images/polo_shirt_white.jpg
+318,High Rise Mom Jeans,H&M,Jeans,White,XS,30.27,4.9,90,High-waisted mom jeans with a relaxed fit,https://example.com/images/high_rise_mom_jeans_white.jpg
+319,Fresh Foam 1080,New Balance,Shoes,Black,40,142.71,4.8,60,Premium cushioned running shoe for long distances,https://example.com/images/fresh_foam_1080_black.jpg
+320,Windbreaker Jacket,Nike,Jackets,Orange,M,78.2,4.7,78,Packable windbreaker with full zip and hood,https://example.com/images/windbreaker_jacket_orange.jpg
+321,Zip-Up Hoodie,Adidas,Hoodies,Black,S,51.2,4,103,Three-stripe zip hoodie in French terry cotton,https://example.com/images/zip_up_hoodie_black.jpg
+322,Leather Biker Jacket,Schott NYC,Jackets,Tan,L,184.59,4.1,145,Genuine leather moto jacket with asymmetric zip,https://example.com/images/leather_biker_jacket_tan.jpg
+323,Samba OG,Adidas,Shoes,Black/White,41,80.21,4.1,73,Retro indoor football shoe with gum sole,https://example.com/images/samba_og_black_white.jpg
+324,Softshell Jacket,Columbia,Jackets,Black,L,80.64,4.2,118,Stretchy softshell jacket for outdoor activities,https://example.com/images/softshell_jacket_black.jpg
+325,Denim Trucker Jacket,Levi's,Jackets,Black,L,70.91,4.8,80,Classic denim trucker jacket with chest pockets,https://example.com/images/denim_trucker_jacket_black.jpg
+326,Chuck Taylor All Star,Converse,Shoes,Navy,39,64.31,4.8,79,Classic high-top canvas sneaker,https://example.com/images/chuck_taylor_all_star_navy.jpg
+327,Dry-Fit Training Tee,Nike,T-Shirts,Green,XL,34.68,4.9,65,Moisture-wicking performance tee for workouts,https://example.com/images/dry_fit_training_tee_green.jpg
+328,Polo Shirt,Ralph Lauren,T-Shirts,Navy,S,77.44,4.3,59,Classic pique cotton polo with embroidered logo,https://example.com/images/polo_shirt_navy.jpg
+329,Polo Shirt,Ralph Lauren,T-Shirts,White,XL,71.97,4.4,33,Classic pique cotton polo with embroidered logo,https://example.com/images/polo_shirt_white.jpg
+330,Straight Leg Jeans,Levi's 501,Jeans,Dark Wash,28,74.54,4.8,42,Iconic straight cut with button fly,https://example.com/images/straight_leg_jeans_dark_wash.jpg
+331,Gel-Lyte III,Asics,Shoes,Black/Black,40,91,4.9,91,Retro running shoe with split tongue design,https://example.com/images/gel_lyte_iii_black_black.jpg
+332,Windbreaker Jacket,Nike,Jackets,Orange,S,65.48,4.5,17,Packable windbreaker with full zip and hood,https://example.com/images/windbreaker_jacket_orange.jpg
+333,High Rise Mom Jeans,H&M,Jeans,White,L,37.58,4.4,6,High-waisted mom jeans with a relaxed fit,https://example.com/images/high_rise_mom_jeans_white.jpg
+334,Striped Crew Neck Tee,Zara,T-Shirts,Black/White,S,21.3,4.4,53,Breton stripe cotton tee with a relaxed fit,https://example.com/images/striped_crew_neck_tee_black_white.jpg
+335,574 Core,New Balance,Shoes,Grey,40,71,4.6,123,Everyday heritage runner with ENCAP midsole,https://example.com/images/574_core_grey.jpg
+336,Club C 85,Reebok,Shoes,White/Navy,43,66.11,4.2,52,Clean leather court classic with chalk outsole,https://example.com/images/club_c_85_white_navy.jpg
+337,Air Force 1,Nike,Shoes,White,44,89.11,4.2,62,Iconic low-top sneaker with foam cushioning,https://example.com/images/air_force_1_white.jpg
+338,Old Skool,Vans,Shoes,Navy/White,40,64.77,4.1,14,Side-stripe skate shoe in suede and canvas,https://example.com/images/old_skool_navy_white.jpg
+339,Track Jacket,Adidas,Jackets,White,L,69.29,4.6,126,Retro-inspired track jacket with snap button closure,https://example.com/images/track_jacket_white.jpg
+340,Stan Smith,Adidas,Shoes,White/Black,40,66.92,3.9,100,Clean leather tennis sneaker with perforated 3-stripes,https://example.com/images/stan_smith_white_black.jpg
+341,Hiking Backpack,Quechua,Bags,Green,30L,36.3,4.3,147,Ergonomic hiking backpack with hydration sleeve,https://example.com/images/hiking_backpack_green.jpg
+342,Denim Trucker Jacket,Levi's,Jackets,Light Wash,XS,89.3,4.2,30,Classic denim trucker jacket with chest pockets,https://example.com/images/denim_trucker_jacket_light_wash.jpg
+343,Street Style Hoodie,Zara,Hoodies,Dark Brown,L,42.47,4.7,135,Soft fleece hoodie with tonal embroidered logo,https://example.com/images/street_style_hoodie_dark_brown.jpg
+344,Essential V-Neck Tee,Uniqlo,T-Shirts,Black,XL,17.75,3.9,142,Soft ribbed v-neck for everyday comfort,https://example.com/images/essential_v_neck_tee_black.jpg
+345,Striped Crew Neck Tee,Zara,T-Shirts,Blue/White,S,22.31,4.9,47,Breton stripe cotton tee with a relaxed fit,https://example.com/images/striped_crew_neck_tee_blue_white.jpg
+346,Waist Pack,Adidas,Bags,Olive,Standard,23.79,4.7,44,Adjustable waist pack with multiple zip pockets,https://example.com/images/waist_pack_olive.jpg
+347,Samba OG,Adidas,Shoes,Black/White,40,84.54,4.9,6,Retro indoor football shoe with gum sole,https://example.com/images/samba_og_black_white.jpg
+348,Oversized Hoodie,Fear of God Essentials,Hoodies,Taupe,XS,76.71,4.6,8,Dropped shoulder oversized hoodie with rubber logo,https://example.com/images/oversized_hoodie_taupe.jpg
+349,Gel-Lyte III,Asics,Shoes,Birch/Birch,44,90.1,4.2,128,Retro running shoe with split tongue design,https://example.com/images/gel_lyte_iii_birch_birch.jpg
+350,Pullover Fleece Hoodie,Champion,Hoodies,Maroon,L,54.81,4.5,118,Heavyweight reverse weave hoodie with kangaroo pocket,https://example.com/images/pullover_fleece_hoodie_maroon.jpg
+351,Old Skool,Vans,Shoes,Black/White,40,58.38,4.1,30,Side-stripe skate shoe in suede and canvas,https://example.com/images/old_skool_black_white.jpg
+352,Pullover Fleece Hoodie,Champion,Hoodies,Grey,XXL,43.51,4.2,143,Heavyweight reverse weave hoodie with kangaroo pocket,https://example.com/images/pullover_fleece_hoodie_grey.jpg
+353,Softshell Jacket,Columbia,Jackets,Black,S,97.7,4.6,130,Stretchy softshell jacket for outdoor activities,https://example.com/images/softshell_jacket_black.jpg
+354,Polo Shirt,Ralph Lauren,T-Shirts,Navy,M,78.57,4.7,56,Classic pique cotton polo with embroidered logo,https://example.com/images/polo_shirt_navy.jpg
+355,Samba OG,Adidas,Shoes,White/Black,43,91.53,4.4,27,Retro indoor football shoe with gum sole,https://example.com/images/samba_og_white_black.jpg
+356,Oversized Hoodie,Fear of God Essentials,Hoodies,Taupe,S,96.23,4.8,32,Dropped shoulder oversized hoodie with rubber logo,https://example.com/images/oversized_hoodie_taupe.jpg
+357,Samba OG,Adidas,Shoes,White/Black,42,88.48,4,108,Retro indoor football shoe with gum sole,https://example.com/images/samba_og_white_black.jpg
+358,Polo Shirt,Ralph Lauren,T-Shirts,Sky Blue,S,75.01,4.7,92,Classic pique cotton polo with embroidered logo,https://example.com/images/polo_shirt_sky_blue.jpg
+359,Leather Biker Jacket,Schott NYC,Jackets,Black,XL,213.33,4.7,136,Genuine leather moto jacket with asymmetric zip,https://example.com/images/leather_biker_jacket_black.jpg
+360,Leather Biker Jacket,Schott NYC,Jackets,Brown,XL,184.25,4.4,107,Genuine leather moto jacket with asymmetric zip,https://example.com/images/leather_biker_jacket_brown.jpg
+361,Graphic Print Hoodie,Puma,Hoodies,White,S,43.15,4.7,52,Bold graphic hoodie with a fleece-lined interior,https://example.com/images/graphic_print_hoodie_white.jpg
+362,Dry-Fit Training Tee,Nike,T-Shirts,Grey,M,27.42,4.4,109,Moisture-wicking performance tee for workouts,https://example.com/images/dry_fit_training_tee_grey.jpg
+363,Fleece Jacket,Decathlon,Jackets,Grey,M,31.93,4.4,63,Lightweight anti-pilling fleece jacket for hiking,https://example.com/images/fleece_jacket_grey.jpg
+364,Softshell Jacket,Columbia,Jackets,Green,XL,84.13,4.1,64,Stretchy softshell jacket for outdoor activities,https://example.com/images/softshell_jacket_green.jpg
+365,Chuck Taylor All Star,Converse,Shoes,Navy,38,55.69,5,93,Classic high-top canvas sneaker,https://example.com/images/chuck_taylor_all_star_navy.jpg
+366,Club C 85,Reebok,Shoes,White/Navy,44,71.31,4.4,62,Clean leather court classic with chalk outsole,https://example.com/images/club_c_85_white_navy.jpg
+367,Softshell Jacket,Columbia,Jackets,Blue,M,98.02,4.6,20,Stretchy softshell jacket for outdoor activities,https://example.com/images/softshell_jacket_blue.jpg
+368,Street Style Hoodie,Zara,Hoodies,Black,S,39,4,78,Soft fleece hoodie with tonal embroidered logo,https://example.com/images/street_style_hoodie_black.jpg
+369,Wide Leg Jeans,ASOS,Jeans,Blue,L,44.96,4.8,86,Wide leg jeans with a high rise and full leg,https://example.com/images/wide_leg_jeans_blue.jpg
+370,Windbreaker Jacket,Nike,Jackets,Black,S,70.61,4.5,51,Packable windbreaker with full zip and hood,https://example.com/images/windbreaker_jacket_black.jpg
+371,Canvas Tote,Zara,Bags,Ecru,Standard,33.63,3.8,110,Large canvas tote with interior zip pocket,https://example.com/images/canvas_tote_ecru.jpg
+372,Polo Shirt,Ralph Lauren,T-Shirts,Sky Blue,XL,79.43,4.7,134,Classic pique cotton polo with embroidered logo,https://example.com/images/polo_shirt_sky_blue.jpg
+373,Stan Smith,Adidas,Shoes,White/Black,41,76.91,4.2,98,Clean leather tennis sneaker with perforated 3-stripes,https://example.com/images/stan_smith_white_black.jpg
+374,Tech Fabric Tee,Under Armour,T-Shirts,Black,M,23.64,4.9,15,Anti-odor tech fabric tee for active use,https://example.com/images/tech_fabric_tee_black.jpg
+375,Rain Jacket,Patagonia,Jackets,Yellow,M,122.74,4.4,101,Waterproof rain jacket with taped seams and hood,https://example.com/images/rain_jacket_yellow.jpg
+376,High Rise Mom Jeans,H&M,Jeans,Black,M,33,3.9,112,High-waisted mom jeans with a relaxed fit,https://example.com/images/high_rise_mom_jeans_black.jpg
+377,Tote Bag,Longchamp,Bags,Black,M,66.14,4.8,13,Foldable nylon tote bag with leather handles,https://example.com/images/tote_bag_black.jpg
+378,Polo Shirt,Ralph Lauren,T-Shirts,Red,S,64.78,4.1,150,Classic pique cotton polo with embroidered logo,https://example.com/images/polo_shirt_red.jpg
+379,High Rise Mom Jeans,H&M,Jeans,Black,XS,38.34,4.5,140,High-waisted mom jeans with a relaxed fit,https://example.com/images/high_rise_mom_jeans_black.jpg
+380,Drawstring Gymsack,Nike,Bags,Black,One Size,21.58,3.8,141,Lightweight polyester gymsack for gym and sports,https://example.com/images/drawstring_gymsack_black.jpg
+381,Stan Smith,Adidas,Shoes,White/Black,39,71.75,4.5,35,Clean leather tennis sneaker with perforated 3-stripes,https://example.com/images/stan_smith_white_black.jpg
+382,Softshell Jacket,Columbia,Jackets,Red,XL,93.21,3.8,8,Stretchy softshell jacket for outdoor activities,https://example.com/images/softshell_jacket_red.jpg
+383,Track Jacket,Adidas,Jackets,Black,S,59.41,4.4,115,Retro-inspired track jacket with snap button closure,https://example.com/images/track_jacket_black.jpg
+384,Pullover Fleece Hoodie,Champion,Hoodies,Grey,S,53.45,4.7,126,Heavyweight reverse weave hoodie with kangaroo pocket,https://example.com/images/pullover_fleece_hoodie_grey.jpg
+385,High Rise Mom Jeans,H&M,Jeans,White,XL,39.05,3.8,60,High-waisted mom jeans with a relaxed fit,https://example.com/images/high_rise_mom_jeans_white.jpg
+386,Chuck Taylor All Star,Converse,Shoes,Navy,43,54.06,4.5,74,Classic high-top canvas sneaker,https://example.com/images/chuck_taylor_all_star_navy.jpg
+387,Essential V-Neck Tee,Uniqlo,T-Shirts,Cream,XS,15.76,4.9,122,Soft ribbed v-neck for everyday comfort,https://example.com/images/essential_v_neck_tee_cream.jpg
+388,Straight Cut Jeans,Tommy Hilfiger,Jeans,Black,36,63.99,4.6,93,Clean straight cut with signature flag detail,https://example.com/images/straight_cut_jeans_black.jpg
+389,Distressed Slim Jeans,Pepe Jeans,Jeans,Black,28,63.55,4,117,Slim fit jeans with authentic rip and distress details,https://example.com/images/distressed_slim_jeans_black.jpg
+390,Straight Leg Jeans,Levi's 501,Jeans,Medium Wash,32,68.79,4.4,82,Iconic straight cut with button fly,https://example.com/images/straight_leg_jeans_medium_wash.jpg
+391,Old Skool,Vans,Shoes,Navy/White,41,68.69,4,50,Side-stripe skate shoe in suede and canvas,https://example.com/images/old_skool_navy_white.jpg
+392,Wide Leg Jeans,ASOS,Jeans,Ecru,L,36.17,4.7,119,Wide leg jeans with a high rise and full leg,https://example.com/images/wide_leg_jeans_ecru.jpg
+393,Printed Band Tee,Pepe Jeans,T-Shirts,White,S,17.92,4.9,53,Rock-inspired graphic tee with vintage print,https://example.com/images/printed_band_tee_white.jpg
+394,Tote Bag,Longchamp,Bags,Black,S,79.6,4.1,25,Foldable nylon tote bag with leather handles,https://example.com/images/tote_bag_black.jpg
+395,High Rise Mom Jeans,H&M,Jeans,Light Blue,L,30.52,4.4,65,High-waisted mom jeans with a relaxed fit,https://example.com/images/high_rise_mom_jeans_light_blue.jpg
+396,Wide Leg Jeans,ASOS,Jeans,Ecru,XS,40.28,4.3,76,Wide leg jeans with a high rise and full leg,https://example.com/images/wide_leg_jeans_ecru.jpg
+397,Linen Blend Tee,Massimo Dutti,T-Shirts,Sage,L,35.1,4.8,48,Breathable linen cotton blend tee for warm weather,https://example.com/images/linen_blend_tee_sage.jpg
+398,Striped Crew Neck Tee,Zara,T-Shirts,Red/White,S,18.78,5,25,Breton stripe cotton tee with a relaxed fit,https://example.com/images/striped_crew_neck_tee_red_white.jpg
+399,Fresh Foam 1080,New Balance,Shoes,Blue,41,132.7,4.6,143,Premium cushioned running shoe for long distances,https://example.com/images/fresh_foam_1080_blue.jpg
+400,Bomber Jacket,Alpha Industries,Jackets,Olive,M,116.09,4.3,72,Classic MA-1 bomber jacket with ribbed collar,https://example.com/images/bomber_jacket_olive.jpg

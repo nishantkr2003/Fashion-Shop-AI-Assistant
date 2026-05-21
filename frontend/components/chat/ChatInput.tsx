@@ -195,7 +195,7 @@ export default function ChatInput() {
         <button
           onClick={submit}
           disabled={loading}
-          className="px-6 rounded-2xl g-black text-white">
+          className="px-6 rounded-2xl g-black text-white bg-black">
           {loading ? "..." : "Send"}
         </button>
       </div>
