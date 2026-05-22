@@ -1,30 +1,18 @@
+import re
 from pathlib import Path
+from app.services.ollama_service import (generate)
 
+async def generate_sql(question):
+    prompt = (Path("app/prompts/sql_prompt.txt").read_text(encoding="utf-8"))
 
-async def generate_sql(question: str):
-    q = question.lower()
-    sql = """
-SELECT *
-FROM products
-WHERE 1=1
-"""
+    prompt = (prompt.replace("{question}",question))
 
-    if "shoes" in q:
-        sql += (" AND category='Shoes'")
+    sql = (await generate(prompt))
 
-    if "black" in q:
-        sql += (" AND color ILIKE '%Black%'")
-
-    if "nike" in q:
-
-        sql += (" AND brand='Nike'")
-
-    if "under" in q:
-        words = q.split()
-        for i in range(len(words)):
-            if words[i] == "under":
-                sql += (f"""AND price<={words[i+1]}""")
-
-    sql += (" LIMIT 10")
+    sql = re.sub(r"```sql|```","",sql)
+    sql = sql.strip()
+    if ";" in sql:
+        sql = (sql.split(";")[0])
+    print("\nFINAL SQL:\n",sql)
 
     return sql
