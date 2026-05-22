@@ -4,7 +4,7 @@ from fastapi import Request
 from fastapi import Response
 from fastapi import HTTPException
 from fastapi.responses import JSONResponse
-
+import traceback
 from app.db.database import get_db
 
 from app.schemas.auth_schema import (
@@ -31,49 +31,30 @@ router = APIRouter(
 
 
 def set_auth_cookies(
-
     response,
-
     access: str,
-
     refresh: str
-
 ):
 
     response.set_cookie(
-
         key="access_token",
-
         value=access,
-
         httponly=True,
-
         secure=False,
-
         samesite="lax",
-
         path="/",
-
         max_age=60 * 60
     )
 
     response.set_cookie(
-
         key="refresh_token",
-
         value=refresh,
-
         httponly=True,
-
         secure=False,
-
         samesite="lax",
-
         path="/",
-
         max_age=60 * 60 * 24 * 30
     )
-
     return response
 
 
@@ -85,57 +66,38 @@ def set_auth_cookies(
     operation_id="register_user"
 )
 async def register(
-
     payload: RegisterInput,
-
     db=Depends(get_db)
-
 ):
 
     try:
 
         user, access, refresh = (
-
-            await register_user(
-                db,
-                payload
-            )
+            await register_user(db,payload)
         )
 
         response = JSONResponse(
-
             content={
-
-                "message":
-                "registered",
-
+                "message":"registered",
                 "user": {
-
-                    "id":
-                    user.id,
-
-                    "email":
-                    user.email
+                    "id":user.id,
+                    "email":user.email
                 }
             }
-
         )
 
         return set_auth_cookies(
-
             response,
-
             access,
-
             refresh
         )
 
     except Exception as e:
-
+        traceback.print_exc()
         raise HTTPException(
-            400,
-            str(e)
-        )
+        status_code=400,
+        detail=str(e)
+    )
 
 
 # LOGIN
@@ -146,58 +108,37 @@ async def register(
     operation_id="login_user"
 )
 async def login(
-
     payload: LoginInput,
-
     db=Depends(get_db)
-
 ):
 
     try:
-
         user, access, refresh = (
-
-            await login_user(
-                db,
-                payload
-            )
+            await login_user(db,payload)
         )
 
         response = JSONResponse(
-
             content={
-
-                "message":
-                "logged_in",
-
+                "message":"logged_in",
                 "user": {
-
-                    "id":
-                    user.id,
-
-                    "email":
-                    user.email
+                    "id":user.id,
+                    "email":user.email
                 }
-
             }
-
         )
 
         return set_auth_cookies(
-
             response,
-
             access,
-
             refresh
         )
 
     except Exception as e:
-
+        traceback.print_exc()
         raise HTTPException(
-            401,
-            str(e)
-        )
+        status_code=400,
+        detail=str(e)
+    )
 
 
 # REFRESH
@@ -208,55 +149,29 @@ async def login(
     operation_id="refresh_token"
 )
 async def refresh(
-
     request: Request,
-
     db=Depends(get_db)
-
 ):
 
     try:
 
-        token = (
-
-            request.cookies.get(
-                "refresh_token"
-            )
-        )
-
+        token = (request.cookies.get("refresh_token"))
         access, refresh_token = (
-
-            await refresh_session(
-                db,
-                token
-            )
+            await refresh_session(db,token)
         )
 
         response = JSONResponse(
-
-            content={
-
-                "message":
-                "refreshed"
-            }
-
+            content={"message":"refreshed"}
         )
 
         return set_auth_cookies(
-
             response,
-
             access,
-
             refresh_token
         )
 
     except Exception as e:
-
-        raise HTTPException(
-            401,
-            str(e)
-        )
+        raise HTTPException(401,str(e))
 
 
 # LOGOUT
@@ -267,44 +182,17 @@ async def refresh(
     operation_id="logout_user"
 )
 async def logout(
-
-    user_id: int = Depends(
-        get_current_user
-    ),
-
-    db=Depends(
-        get_db
-    )
-
+    user_id: int = Depends(get_current_user),
+    db=Depends(get_db)
 ):
 
-    await logout_user(
-        db,
-        user_id
-    )
+    await logout_user(db,user_id)
 
     response = JSONResponse(
+        content={"message":"logged_out"})
 
-        content={
+    response.delete_cookie(key="access_token",path="/")
 
-            "message":
-            "logged_out"
-        }
-
-    )
-
-    response.delete_cookie(
-
-        key="access_token",
-
-        path="/"
-    )
-
-    response.delete_cookie(
-
-        key="refresh_token",
-
-        path="/"
-    )
+    response.delete_cookie(key="refresh_token",path="/")
 
     return response
