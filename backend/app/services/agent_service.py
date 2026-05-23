@@ -223,6 +223,9 @@ from app.services.memory_service import (
     load_memory
 )
 
+from app.services.context_service import (
+    build_query
+)
 
 async def run_agent(
     db,
@@ -259,7 +262,11 @@ async def run_agent(
         if v:
             query.append(str(v))
 
-    products = (search_products(" ".join(query)))
+    # products = await search_products(db," ".join(query))
+    q = build_query(conversation_id," ".join(query))
+
+    print("\nFINAL QUERY:",q)
+    products = await search_products(db,q)
 
     if memory["brand"]:
 
