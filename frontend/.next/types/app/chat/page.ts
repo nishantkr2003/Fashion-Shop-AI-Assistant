@@ -1,4 +1,4 @@
-// File: C:\Users\nisha\OneDrive\Desktop\Assignment 1\claudeFashion\frontend\src\app\chat\page.tsx
+// File: C:\Users\nisha\OneDrive\Desktop\Excellence Tech\Fashion Shop AI Assistant\frontend\src\app\chat\page.tsx
 import * as entry from '../../../../src/app/chat/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
