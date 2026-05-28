@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 # Fashion Shop AI
 
 A production-ready, full-stack AI-powered shopping assistant with multi-agent architecture, streaming responses, RAG knowledge base, and human review queue.
@@ -13,89 +11,58 @@ User → Next.js Frontend → FastAPI Backend → Router Agent
                                                ├── SQL Agent    → Neon PostgreSQL
                                                ├── RAG Agent    → Pinecone + PDF
                                                └── Chat Agent   → Ollama LLM
-![System Architecture](Images/architecture.png)
 ```
+
+![System Architecture](Images/Backend%20Service%20Dependency%20Graph.png)
+
+---
 
 ## Tech Stack
 
-| Layer      | Tech                                                                                |
-| ---------- | ----------------------------------------------------------------------------------- |
-| Frontend   | Next.js 14, TypeScript, Tailwind CSS, Zustand                                       |
-| Backend    | FastAPI, SQLAlchemy, JWT, Passlib                                                   |
+| Layer      | Tech                                                                                 |
+| ---------- | ------------------------------------------------------------------------------------ |
+| Frontend   | Next.js 14, TypeScript, Tailwind CSS, Zustand                                        |
+| Backend    | FastAPI, SQLAlchemy, JWT, Passlib                                                    |
 | AI         | llama3.1:8b (chat), qwen2.5-coder:1.5b (SQL/routing), nomic-embed-text (embeddings) |
-| Vector DB  | Pinecone                                                                            |
-| Database   | Neon PostgreSQL                                                                     |
-| Deployment | Vercel (frontend), Render (backend)                                                 |
+| Vector DB  | Pinecone                                                                             |
+| Database   | Neon PostgreSQL                                                                      |
+| Deployment | Vercel (frontend), Render (backend)                                                  |
 
-## =======
+---
 
 ## Sequence Diagram
 
-![Sequence Diagram](Images/sequence.png)
-
-# Fashion Shop AI Assistant — Master Build Prompt
-
-## Project Identity
-
-Build a full-stack AI assistant for a fashion e-commerce shop called **Folio**. The system answers customer questions by routing them to the correct agent: SQL for product data, RAG for policies and FAQs, and Chat for general conversation. All AI runs locally via Ollama. Vectors are stored in Pinecone. The database is Neon (PostgreSQL).
+![Sequence Diagram](Images/Complete%20AI%20Query%20Flow%20Diagram.png)
 
 ---
 
-## Tech Stack
+## Agent Routing
 
-### Backend
-
-- **Runtime:** Python 3.11+
-- **Framework:** FastAPI
-- **ORM:** SQLAlchemy (async with asyncpg)
-- **Database:** Neon (PostgreSQL, serverless) — `DATABASE_URL` in `.env`
-- **LLM:** Ollama — `qwen2.5-coder:1.5b` for all generation and routing
-- **Embeddings:** Ollama — `nomic-embed-text:latest`
-- **Vector Store:** Pinecone (Serverless, AWS us-east-1)
-- **Auth:** Manual JWT — `python-jose`, `passlib[bcrypt]`
-- **AI framework:** LangChain (agents, RAG, text splitters)
-- **PDF loading:** `pypdf`, `langchain-community` PyPDFLoader
-- **CSV import:** `pandas`
-- **Env:** `python-dotenv`
-
-### Frontend
-
-- **Framework:** Next.js 14 (App Router)
-- **State:** Zustand
-- **UI components:** ShadCN UI
-- **Styling:** Tailwind CSS
-- **HTTP:** native fetch with streaming (ReadableStream)
-
-### Models (Ollama — must be pulled before running)
-
-```
-ollama pull qwen2.5-coder:1.5b
-ollama pull nomic-embed-text:latest
-```
+![Agent Routing](Images/LangGraph%20Multi-Agent%20Routing%20Architectur....png)
 
 ---
 
-## Environment Variables
+## RAG Workflow
 
-### Backend `.env`
+![RAG Workflow](Images/RAG%20Pipeline%20Diagram.png)
 
-```
-DATABASE_URL=postgresql+asyncpg://user:pass@host/dbname   # Neon connection string
-JWT_SECRET=your_random_secret_here
-PINECONE_API_KEY=your_pinecone_api_key
-PINECONE_INDEX=fashion-rag
-PINECONE_CLOUD=aws
-PINECONE_REGION=us-east-1
-OLLAMA_BASE_URL=http://localhost:11434
-```
+---
 
-### Frontend `.env.local`
+## SQL Agent Flow
 
-```
-NEXT_PUBLIC_API_URL=http://localhost:8000
-```
+![SQL Agent Flow](Images/SQL%20Agent%20Internal%20Pipeline.png)
 
-> > > > > > > origin/main
+---
+
+## Streaming Flow
+
+![Streaming Flow](Images/Streaming%20Architecture%20Diagram.png)
+
+---
+
+## Review Queue Flow
+
+![Review Queue Flow](Images/Human%20Review%20Pipeline.png)
 
 ---
 
@@ -105,67 +72,6 @@ NEXT_PUBLIC_API_URL=http://localhost:8000
 fashion-shop-ai/
 ├── backend/
 │   ├── app/
-<<<<<<< HEAD
-│   │   ├── main.py          # FastAPI app, CORS, routers
-│   │   ├── db.py            # SQLAlchemy + Neon connection
-│   │   ├── models.py        # users, products, sessions, messages, review_queue
-│   │   ├── schemas.py       # Pydantic request/response models
-│   │   ├── auth.py          # JWT auth, bcrypt, /auth/* routes
-│   │   ├── chat.py          # SSE streaming, /chat/* routes
-│   │   ├── agents.py        # Router, SQL, RAG, Chat agents
-│   │   ├── rag.py           # Pinecone vector store, PDF ingestion
-│   │   ├── memory.py        # Chat history, session management
-│   │   ├── csv_import.py    # Dynamic CSV → PostgreSQL → Pinecone
-│   │   ├── review.py        # Human review queue
-│   │   └── utils.py         # Ollama client, SQL safety, helpers
-│   ├── requirements.txt
-│   └── .env.example
-└── frontend/
-    ├── src/
-    │   ├── app/
-    │   │   ├── login/page.tsx
-    │   │   ├── signup/page.tsx
-    │   │   └── chat/page.tsx
-    │   ├── components/
-    │   │   ├── Sidebar.tsx
-    │   │   ├── ChatMessage.tsx
-    │   │   └── ChatInput.tsx
-    │   ├── stores/
-    │   │   ├── auth.ts       # Zustand auth store
-    │   │   └── chat.ts       # Zustand chat + session store
-    │   └── lib/
-    │       └── api.ts        # Axios client, SSE stream helper
-    └── .env.local.example
----
-
-## Agent Routing
-
-![Agent Routing](Images/agent-routing.png)
-
----
-
-## RAG Workflow
-
-![RAG Workflow](Images/rag-workflow.png)
-
----
-
-## SQL Agent Flow
-
-![SQL Agent Flow](Images/sql-agent-flow.png)
-
----
-
-## Streaming Flow
-
-![Streaming Flow](Images/streaming-flow.png)
-
----
-
-## Review Queue Flow
-
-![Review Queue Flow](Images/review-queue.png)
-=======
 │   │   ├── __init__.py
 │   │   ├── main.py              # FastAPI app, CORS, router mounting
 │   │   ├── db.py                # SQLAlchemy engine, SessionLocal, Base
@@ -213,13 +119,70 @@ fashion-shop-ai/
 │   │   └── chatStore.ts         # Zustand: sessions, messages, reviewItems
 │   └── lib/
 │       └── api.ts               # fetch wrappers for all backend endpoints
-└── README.md
->>>>>>> origin/main
+├── Images/
+│   ├── Backend Service Dependency Graph.png
+│   ├── Complete AI Query Flow Diagram.png
+│   ├── Conversation Memory Flow.png
+│   ├── Deployment Architecture Diagram.png
+│   ├── Human Review Pipeline.png
+│   ├── LangGraph Multi-Agent Routing Architectur....png
+│   ├── RAG Pipeline Diagram.png
+│   ├── SQL Agent Internal Pipeline.png
+│   ├── Streaming Architecture Diagram.png
+│   └── mermaid-diagram (8).png
+├── .gitignore
+├── README.md
+└── run.md
 ```
 
 ---
 
-<<<<<<< HEAD
+## Database Schema (Neon / PostgreSQL)
+
+```sql
+CREATE TABLE users (
+    id            SERIAL PRIMARY KEY,
+    full_name     VARCHAR NOT NULL,
+    email         VARCHAR UNIQUE NOT NULL,
+    password_hash VARCHAR NOT NULL,
+    created_at    TIMESTAMP DEFAULT NOW()
+);
+
+CREATE TABLE products (
+    id       SERIAL PRIMARY KEY,
+    name     VARCHAR,
+    category VARCHAR,   -- Shoes | Hoodies | Jackets | Jeans | T-Shirts | Bags
+    price    FLOAT,
+    brand    VARCHAR,
+    color    VARCHAR,
+    stock    INTEGER
+);
+
+CREATE TABLE sessions (
+    id         SERIAL PRIMARY KEY,
+    user_id    INTEGER NOT NULL,
+    title      VARCHAR DEFAULT 'New Chat',
+    created_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE TABLE messages (
+    id         SERIAL PRIMARY KEY,
+    session_id INTEGER NOT NULL,
+    role       VARCHAR NOT NULL,   -- user | assistant
+    content    TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE TABLE review_queue (
+    id       SERIAL PRIMARY KEY,
+    query    TEXT,
+    response TEXT,
+    reason   VARCHAR,
+    status   VARCHAR DEFAULT 'pending'  -- pending | approved | edited | rejected
+);
+```
+
+---
 
 ## Local Development
 
@@ -234,7 +197,6 @@ fashion-shop-ai/
 ### 1. Pull Ollama models
 
 ```bash
-ollama pull llama3.1:8b
 ollama pull qwen2.5-coder:1.5b
 ollama pull nomic-embed-text:latest
 ```
@@ -278,9 +240,11 @@ Visit http://localhost:3000
 | `JWT_SECRET`       | Secret key for JWT signing (min 32 chars)                 |
 | `OLLAMA_URL`       | Ollama server URL (default: http://localhost:11434)       |
 | `PINECONE_API_KEY` | Pinecone API key                                          |
-| `PINECONE_INDEX`   | Pinecone index name (default: fashion-shop)               |
+| `PINECONE_INDEX`   | Pinecone index name (default: fashion-rag)                |
+| `PINECONE_CLOUD`   | Pinecone cloud provider (default: aws)                    |
+| `PINECONE_REGION`  | Pinecone region (default: us-east-1)                      |
 | `CHAT_MODEL`       | Ollama chat model (default: llama3.1:8b)                  |
-| `SQL_MODEL`        | Ollama SQL/routing model (default: qwen2.5-coder:1.5b)    |
+| `SQL_MODEL`        | Ollama SQL/routing model (default: qwen2.5-coder:1.5b)   |
 | `EMBED_MODEL`      | Ollama embedding model (default: nomic-embed-text:latest) |
 
 ### Frontend (`frontend/.env.local`)
@@ -310,20 +274,17 @@ Visit http://localhost:3000
 | GET    | `/chat/sessions`               | List user sessions |
 | GET    | `/chat/sessions/{id}/messages` | Get messages       |
 | DELETE | `/chat/sessions/{id}`          | Delete session     |
-| POST   | `/chat/stream`                 | SSE streaming chat |
-
-### CSV Import
-
-| Method | Endpoint         | Description                   |
-| ------ | ---------------- | ----------------------------- |
-| POST   | `/import/upload` | Upload CSV, auto-create table |
+| POST   | `/chat/send`                   | Send message       |
+| GET    | `/chat/review/status/{id}`     | Poll review status |
 
 ### Review Queue
 
-| Method | Endpoint       | Description          |
-| ------ | -------------- | -------------------- |
-| GET    | `/review/`     | List review items    |
-| PATCH  | `/review/{id}` | Update review status |
+| Method | Endpoint                    | Description          |
+| ------ | --------------------------- | -------------------- |
+| GET    | `/review/queue`             | List review items    |
+| POST   | `/review/approve/{id}`      | Approve review item  |
+| POST   | `/review/reject/{id}`       | Reject review item   |
+| POST   | `/review/edit/{id}`         | Edit review response |
 
 ---
 
@@ -331,135 +292,45 @@ Visit http://localhost:3000
 
 ### Router Agent
 
-Uses `qwen2.5-coder:1.5b` to classify queries:
+Uses `qwen2.5-coder:1.5b` to classify queries into one of three routes:
 
-- `sql` → product data questions (inventory, prices, stock)
-- `rag` → policy questions (shipping, returns, FAQ)
-- `chat` → general conversation
+- `sql` → product data questions (inventory, prices, stock, filters)
+- `rag` → policy questions (shipping, returns, exchange, FAQ)
+- `chat` → general conversation and small talk
 
-Returns confidence score. If `< 0.75`, triggers human review.
+Returns a confidence score. If `< 0.75`, the query is flagged for human review.
 
-### SQL Agent
+### SQL Agent (`app/sql_agent.py`)
 
-- Introspects database schema dynamically
-- Generates PostgreSQL SELECT queries
-- Blocks all destructive operations (INSERT/UPDATE/DELETE/DROP)
-- Supports: COUNT, AVG, GROUP BY, ORDER BY, LIMIT, ILIKE
+```
+User question
+    ↓
+retrieve_relevant_schema(question, k=4)   ← Pinecone similarity search on sql_schema namespace
+    ↓
+LLM prompt: question + relevant schema chunks → generates SQL
+    ↓
+validate_sql()   ← blocks DELETE/UPDATE/DROP/ALTER/TRUNCATE/INSERT
+    ↓
+verify_sql()     ← runs EXPLAIN {sql} against Neon to catch syntax errors
+    ↓
+execute_sql()    ← runs query, returns list[dict]
+    ↓ (on failure, up to 2 retries)
+repair_sql()     ← LLM re-generates with error message + relevant schema
+```
 
-### RAG Agent
+**Blocked operations:** `DELETE`, `UPDATE`, `DROP`, `ALTER`, `TRUNCATE`, `INSERT` — only `SELECT` is permitted.
 
-- Embeds query with `nomic-embed-text`
-- Retrieves top-5 chunks from Pinecone
-- Filters by cosine similarity > 0.5
-- Generates answer with `llama3.1:8b`
+### RAG Agent (`app/rag.py`)
+
+- Embeds query with `nomic-embed-text:latest`
+- Retrieves top-3 chunks from Pinecone (`rag_docs` namespace)
+- Generates answer grounded strictly in retrieved context
+- Falls back to `"Information not available."` if context is empty
 
 ### Chat Agent
 
-- Multi-turn conversation with history (last 8 messages)
-- General assistant persona
-
----
-
-## CSV Import
-
-POST any CSV to `/import/upload`. The system:
-
-1. Detects column names and types (String/Float/Integer)
-2. Creates or updates the PostgreSQL table automatically
-3. Inserts rows (ignores errors, skips duplicates)
-4. Embeds all rows into Pinecone for semantic search
-5. Returns a summary: table name, columns, inserted/skipped counts
-
-No hardcoded schema — works with any CSV structure.
-
----
-
-## PDF Knowledge Base
-
-Use `app/rag.py:ingest_pdf_text()` to index PDFs:
-
-````python
-from app.rag import ingest_pdf_text
-import asyncio
-
-with open("policies.pdf", "rb") as f:
-    import PyPDF2
-    reader = PyPDF2.PdfReader(f)
-    text = "\n".join(page.extract_text() for page in reader.pages)
-
-asyncio.run(ingest_pdf_text(text, source="policies", chunk_size=800))
-=======
-## Database Schema (Neon / PostgreSQL)
-
-```sql
-CREATE TABLE users (
-    id          SERIAL PRIMARY KEY,
-    full_name   VARCHAR NOT NULL,
-    email       VARCHAR UNIQUE NOT NULL,
-    password_hash VARCHAR NOT NULL,
-    created_at  TIMESTAMP DEFAULT NOW()
-);
-
-CREATE TABLE products (
-    id       SERIAL PRIMARY KEY,
-    name     VARCHAR,
-    category VARCHAR,   -- Shoes | Hoodies | Jackets | Jeans | T-Shirts | Bags
-    price    FLOAT,
-    brand    VARCHAR,
-    color    VARCHAR,
-    stock    INTEGER
-);
-
-CREATE TABLE sessions (
-    id         SERIAL PRIMARY KEY,
-    user_id    INTEGER NOT NULL,
-    title      VARCHAR DEFAULT 'New Chat',
-    created_at TIMESTAMP DEFAULT NOW()
-);
-
-CREATE TABLE messages (
-    id         SERIAL PRIMARY KEY,
-    session_id INTEGER NOT NULL,
-    role       VARCHAR NOT NULL,   -- user | assistant
-    content    TEXT NOT NULL,
-    created_at TIMESTAMP DEFAULT NOW()
-);
-
-CREATE TABLE review_queue (
-    id       SERIAL PRIMARY KEY,
-    query    TEXT,
-    response TEXT,
-    reason   VARCHAR,
-    status   VARCHAR DEFAULT 'pending'  -- pending | approved | edited | rejected
-);
-````
-
-### Products CSV format (`data/products.csv`)
-
-```
-name,category,price,brand,color,stock
-Air Sprint Low,Shoes,2499,Nike,Black,15
-...
-```
-
-Generate at least 50 real-sounding products across: Shoes, Hoodies, Jackets, Jeans, T-Shirts, Bags. Use believable Indian prices (₹500–₹8000). Mix in-stock and out-of-stock items.
-
----
-
-## Auth System (Manual JWT)
-
-### `app/auth.py`
-
-- `hash_password(password: str) -> str` — bcrypt via passlib, reject if > 72 bytes
-- `verify_password(plain: str, hashed: str) -> bool`
-- `create_token(data: dict) -> str` — HS256 JWT, 24-hour expiry, uses `JWT_SECRET`
-
-### `app/routes/auth.py`
-
-- `POST /auth/register` — validate email uniqueness, hash password, create user, return JWT + user
-- `POST /auth/login` — verify credentials, return JWT + user
-- Schemas: `RegisterInput(full_name, email, password: min_length=8, max_length=72)`, `LoginInput(email, password)`
-- Return shape: `{ access_token, token_type: "bearer", user: { id, email, full_name } }`
+- Multi-turn conversation with session history (last 8 messages)
+- General assistant persona for greetings and small talk
 
 ---
 
@@ -483,281 +354,21 @@ pc.create_index(
 | `rag_docs`   | Chunked text from PDFs and TXT files  | RAG agent |
 | `sql_schema` | Per-table schema descriptions as docs | SQL agent |
 
-### Embeddings
-
-Use `OllamaEmbeddings(model="nomic-embed-text:latest")` for all embedding operations.
-
 ---
 
-## SQL Agent (`app/sql_agent.py`)
-
-This is the core fix. The original agent sent the raw full schema to the LLM every time. The new flow uses Pinecone semantic search to retrieve only the relevant tables before generation.
-
-### Flow
-
-```
-User question
-    ↓
-retrieve_relevant_schema(question, k=4)   ← Pinecone similarity search on sql_schema namespace
-    ↓
-LLM prompt: question + relevant schema chunks → generates SQL
-    ↓
-validate_sql()   ← blocks DELETE/UPDATE/DROP/ALTER/TRUNCATE/INSERT, SELECT only
-    ↓
-verify_sql()     ← runs EXPLAIN {sql} against Neon, catches syntax errors early
-    ↓
-execute_sql()    ← runs query, returns list[dict]
-    ↓ (on failure, up to 2 retries)
-repair_sql()     ← LLM re-generates with error message + relevant schema
-```
-
-### Key functions
-
-```python
-def ingest_schema():
-    """Call once after migrations. Embeds each table as a Document into sql_schema namespace."""
-    schema = read_schema()  # reads from information_schema.columns
-    docs = [
-        Document(
-            page_content=f"Table: {table}\nColumns:\n" + "\n".join(f"  - {c}" for c in cols),
-            metadata={"table": table}
-        )
-        for table, cols in schema.items()
-    ]
-    store = PineconeVectorStore(index_name=PINECONE_INDEX, embedding=embeddings, namespace="sql_schema")
-    store.add_documents(docs)
-
-def retrieve_relevant_schema(question: str, k: int = 4) -> str:
-    """Semantic search → returns formatted schema string for the most relevant tables."""
-    store = PineconeVectorStore(...)
-    results = store.similarity_search(question, k=k)
-    return "\n\n".join(r.page_content for r in results)
-    # Falls back to full schema string if Pinecone fails
-
-def generate_sql(question: str) -> str:
-    relevant_schema = retrieve_relevant_schema(question)
-    prompt = f"""
-You are a PostgreSQL expert.
-Generate a single valid PostgreSQL SELECT statement.
-
-Relevant schema:
-{relevant_schema}
-
-STRICT RULES:
-- Use ONLY columns from the schema above.
-- Do NOT invent joins or foreign keys.
-- If one table is sufficient, do NOT join.
-- Use ILIKE for text search.
-- Always add LIMIT 10.
-- Return ONLY the raw SQL — no explanation, no markdown.
-
-Question: {question}
-"""
-    sql = clean_sql(llm.invoke(prompt).content)
-    validate_sql(sql)
-    return sql
-```
-
-### Blocked operations
-
-```python
-BLOCKED = {"delete", "update", "drop", "alter", "truncate", "insert"}
->>>>>>> origin/main
-```
-
----
-
-<<<<<<< HEAD
-
-## Deployment
-
-### Backend → Render
-
-1. Create a new **Web Service** on Render
-2. Connect your repo, set root directory to `backend/`
-3. Build: `pip install -r requirements.txt`
-4. Start: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
-5. Add all environment variables in Render dashboard
-
-### Frontend → Vercel
-
-1. Import the repo on Vercel
-2. Set root directory to `frontend/`
-3. Add environment variable: `NEXT_PUBLIC_API_URL=https://your-render-app.onrender.com`
-4. Deploy
-
-### Pinecone Setup
-
-1. Create a Pinecone index named `fashion-shop`
-2. Dimensions: **768** (nomic-embed-text output)
-3. Metric: **cosine**
-
----
-
-## Human Review
-
-Responses are automatically queued for review when:
-
-- Routing confidence < 0.75
-- Agent encounters an error
-
-Reviewers can PATCH `/review/{id}` with status: `approved | edited | rejected`.
-
----
-
-## Extending to a New Dataset
-
-1. Upload your CSV via `POST /import/upload`
-2. The table is auto-created, rows inserted, embeddings indexed
-3. The SQL agent reads the schema dynamically — no code changes needed
-4. # The RAG agent searches Pinecone — PDF documents add context automatically
-
-## RAG Agent (`app/rag.py`)
-
-### Ingestion
-
-```python
-def ingest():
-    """Loads all .pdf and .txt from data/docs/, chunks, embeds, stores in rag_docs namespace."""
-    for file in Path("data/docs").iterdir():
-        if file.suffix == ".pdf":
-            loader = PyPDFLoader(str(file))
-        elif file.suffix == ".txt":
-            loader = TextLoader(str(file), encoding="utf-8")
-        raw = loader.load()
-        chunks = RecursiveCharacterTextSplitter(chunk_size=400, chunk_overlap=50).split_documents(raw)
-        store.add_documents(chunks)
-```
-
-### Retrieval
-
-```python
-def retrieve(query: str, k: int = 3) -> list:
-    store = PineconeVectorStore(
-        index_name=PINECONE_INDEX,
-        embedding=embeddings,
-        namespace="rag_docs",
-        pinecone_api_key=PINECONE_API_KEY
-    )
-    return store.similarity_search(query, k=k)
-```
-
-### Agent prompt
-
-```
-Answer ONLY from the context below.
-If the answer is not in the context, say: "Information not available."
-
-Context:
-{context}
-
-Question: {question}
-```
-
----
-
-## Router Agent (`app/agents.py`)
-
-Uses `qwen2.5-coder:1.5b` via `ChatOllama`. Returns one of: `sql`, `rag`, `chat`.
-
-### Prompt
-
-```
-Classify the query. Return EXACTLY ONE word: sql, rag, or chat.
-
-sql  → product data, price, inventory, stock, filter, show, compare
-rag  → refund, shipping, exchange, FAQ, policy, delivery, return
-chat → greetings, general conversation, small talk
-
-Query: {query}
-```
-
-### Logic
-
-```python
-result = llm.invoke(prompt).content.lower().strip()
-if "rag"  in result: return {"agent": "rag",  "confidence": 0.95}
-if "sql"  in result: return {"agent": "sql",  "confidence": 0.95}
-return                        {"agent": "chat", "confidence": 0.90}
-```
-
----
-
-## Chat Route (`app/routes/chat.py`)
-
-### `POST /chat/send`
-
-```python
-@router.post("/send")
-def send(payload: ChatRequest):
-    session = 1   # replace with JWT user ID when auth is wired
-    route = router_agent(payload.message)
-
-    try:
-        if route["agent"] == "sql":
-            memory  = load(session)
-            history = memory.get("history", [])
-            context = "\n".join(history[-2:])          # last 2 turns for context
-            query   = (context + "\n" + payload.message).strip()
-
-            result     = sql_agent(query)
-            rows       = result["rows"]
-            confidence = evaluate(rows)
-            formatted  = format_result(rows)
-            save(session, payload.message)
-
-            return {"message": formatted, "review": False, "confidence": confidence}
-
-        if route["agent"] == "rag":
-            answer = rag_agent(payload.message)
-            return {"message": answer, "review": False}
-
-        reply = chat_agent(payload.message)
-        return {"message": reply, "review": False}
-
-    except Exception as e:
-        review_id = push_review(payload.message, str(e), "execution_error")
-        return {
-            "message":   "Your question has been queued for human review.",
-            "review":    True,
-            "review_id": review_id,
-        }
-```
-
-### `GET /chat/review/status/{review_id}` — Human-in-the-loop polling
-
-```python
-@router.get("/review/status/{review_id}")
-def review_status(review_id: int):
-    row = conn.execute("SELECT status, response FROM review_queue WHERE id = :id")
-    status = row["status"]
-
-    if status == "pending":
-        return {"status": "pending", "review": True,  "message": "Awaiting review…"}
-    if status == "rejected":
-        return {"status": "rejected","review": False, "message": "Sorry, I couldn't answer that."}
-    # approved or edited:
-    return {"status": status, "review": False, "message": row["response"]}
-```
-
----
-
-## Review Routes (`app/routes/review.py`)
-
-| Endpoint                    | Description                        | Returns                                   |
-| --------------------------- | ---------------------------------- | ----------------------------------------- |
-| `GET /review/queue`         | All pending items                  | `[{id, query, response, reason, status}]` |
-| `POST /review/approve/{id}` | Set status=approved                | `{success, id, status, message, query}`   |
-| `POST /review/reject/{id}`  | Set status=rejected                | `{success, id, status, message}`          |
-| `POST /review/edit/{id}`    | Update response, set status=edited | `{success, id, status, message}`          |
-
-**Critical:** `approve` and `edit` must return `message` (the resolved response) in the body so the frontend can display it immediately after the poller fires — no second round-trip needed.
+## Auth System (Manual JWT)
+
+- `hash_password(password)` — bcrypt via passlib, rejects passwords > 72 bytes
+- `verify_password(plain, hashed)` — constant-time comparison
+- `create_token(data)` — HS256 JWT with 24-hour expiry
+- Register validates email uniqueness, hashes password, returns JWT + user object
+- Response shape: `{ access_token, token_type: "bearer", user: { id, email, full_name } }`
 
 ---
 
 ## Memory (`app/memory.py`)
 
-Simple in-memory dict keyed by session ID. Stores last N user messages for multi-turn context.
+Simple in-memory dict keyed by session ID. Stores last N user messages for multi-turn context. The SQL agent uses `history[-2:]` (last 2 user messages) to resolve follow-up queries like "only show black ones".
 
 ```python
 memory: dict = {}
@@ -774,16 +385,16 @@ def clear(session):
     memory.pop(session, None)
 ```
 
-The SQL agent uses `history[-2:]` (last 2 user messages) to resolve follow-up queries like "only black ones".
-
 ---
 
 ## Human-in-the-Loop Flow
 
+Responses are automatically queued for review when routing confidence is below 0.75 or an agent raises an exception.
+
 ```
 User sends message
     ↓
-Exception raised (SQL error, routing failure, etc.)
+Exception raised (SQL error, routing failure, low confidence, etc.)
     ↓
 push_review(query, error, "execution_error") → returns review_id
     ↓
@@ -793,7 +404,7 @@ Frontend shows "Awaiting review" banner with pulsing dots
     ↓
 Frontend polls GET /chat/review/status/42 every 2500ms
     ↓
-Admin opens Review Panel → sees queue → clicks Approve
+Admin opens Review Panel → sees queue → clicks Approve / Edit / Reject
     ↓
 POST /review/approve/42 → returns { message: "resolved answer" }
     ↓
@@ -801,6 +412,17 @@ Poller receives status != "pending" → resolves banner to message bubble
     ↓
 Review panel refreshes queue count
 ```
+
+### Review Routes
+
+| Endpoint                    | Description                        | Returns                                     |
+| --------------------------- | ---------------------------------- | ------------------------------------------- |
+| `GET /review/queue`         | All pending items                  | `[{id, query, response, reason, status}]`   |
+| `POST /review/approve/{id}` | Set status = approved              | `{success, id, status, message, query}`     |
+| `POST /review/reject/{id}`  | Set status = rejected              | `{success, id, status, message}`            |
+| `POST /review/edit/{id}`    | Update response, set status=edited | `{success, id, status, message}`            |
+
+> **Note:** `approve` and `edit` must return `message` in the response body so the frontend can display it immediately after the poller fires — no second round-trip needed.
 
 ---
 
@@ -823,28 +445,18 @@ interface ChatStore {
 }
 ```
 
-### API layer (`lib/api.ts`)
+### Message rendering
 
-```typescript
-export const sendMessage   = (msg: string)   => fetch(`${API}/chat/send`, { method: 'POST', ... })
-export const pollStatus    = (id: number)    => fetch(`${API}/chat/review/status/${id}`)
-export const getQueue      = ()              => fetch(`${API}/review/queue`)
-export const approveItem   = (id: number)   => fetch(`${API}/review/approve/${id}`, { method: 'POST' })
-export const rejectItem    = (id: number)   => fetch(`${API}/review/reject/${id}`,  { method: 'POST' })
-```
-
-### Message types
-
-| `agent` value  | Render as                                         |
-| -------------- | ------------------------------------------------- |
-| `sql`          | Parse `\n\n`-separated blocks → Product card grid |
-| `rag`          | Plain text bubble                                 |
-| `chat`         | Plain text bubble                                 |
-| `review: true` | "Awaiting review" banner, starts polling          |
+| `agent` value  | Render as                                          |
+| -------------- | -------------------------------------------------- |
+| `sql`          | Parse `\n\n`-separated blocks → Product card grid  |
+| `rag`          | Plain text bubble                                  |
+| `chat`         | Plain text bubble                                  |
+| `review: true` | "Awaiting review" banner, starts polling           |
 
 ### Product card parsing
 
-SQL `format_result()` returns blocks like:
+`format_result()` returns blocks like:
 
 ```
 Name: Air Sprint Low
@@ -855,18 +467,14 @@ Color: Black
 Stock: 15
 ```
 
-Parse each block by splitting on `\n`, then `:` to get key-value pairs. Render as cards with category emoji, price in gold, stock indicator dot.
-
-### Streaming
-
-Use `ReadableStream` on `POST /chat/send`. The current backend returns a full JSON response, not a stream. To add streaming, wrap `stream.py`'s `StreamingResponse` around the final formatted text. Frontend reads chunks via `reader.read()` in a loop and appends tokens to the message.
+Split on `\n\n` to get blocks, then split each line on `:` to get key-value pairs. Render as cards with category emoji, price in gold, and a stock indicator dot.
 
 ---
 
 ## Setup & Run Sequence
 
 ```bash
-# 1. Pull models
+# 1. Pull Ollama models
 ollama pull qwen2.5-coder:1.5b
 ollama pull nomic-embed-text:latest
 
@@ -876,20 +484,21 @@ pip install fastapi uvicorn sqlalchemy asyncpg python-jose passlib[bcrypt] \
     python-dotenv langchain langchain-community langchain-ollama \
     langchain-pinecone langchain-text-splitters pinecone-client pypdf pandas
 
-# 3. Run database migrations (auto via SQLAlchemy on startup)
-# Tables created by Base.metadata.create_all(bind=engine) in main.py
+# 3. Configure environment
+cp .env.example .env
+# Fill in DATABASE_URL, JWT_SECRET, PINECONE_API_KEY, etc.
 
-# 4. Seed products
+# 4. Run database migrations (auto via SQLAlchemy on startup)
+uvicorn app.main:app --reload --port 8000
+
+# 5. Seed products
 python -m app.scripts.seed          # imports data/products.csv → Neon products table
 
-# 5. Ingest schema into Pinecone (run once after seeding)
+# 6. Ingest schema into Pinecone (run once after seeding)
 python -m app.scripts.ingest_schema # embeds table schemas → sql_schema namespace
 
-# 6. Ingest RAG documents into Pinecone (run once, re-run when docs change)
+# 7. Ingest RAG documents into Pinecone (run once, re-run when docs change)
 python -m app.scripts.ingest_rag    # embeds data/docs/ → rag_docs namespace
-
-# 7. Start backend
-uvicorn app.main:app --reload --port 8000
 
 # 8. Frontend
 cd ../frontend
@@ -899,52 +508,45 @@ npm run dev                         # http://localhost:3000
 
 ---
 
-## Policy Documents to Create (`data/docs/`)
+## Deployment
 
-Create realistic brand-style documents for a fashion shop called Folio.
+### Backend → Render
 
-### `refund_policy.pdf` or `refund_policy.txt`
+1. Create a new **Web Service** on Render
+2. Connect your repo, set root directory to `backend/`
+3. Build command: `pip install -r requirements.txt`
+4. Start command: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
+5. Add all environment variables in the Render dashboard
 
-- 7-day return window from delivery date
-- Items must be unworn, unwashed, with original tags
-- Refund processed within 5–7 business days to original payment method
-- Sale items are non-refundable
-- Process: raise return request on website → receive return label → ship back
+### Frontend → Vercel
 
-### `shipping_policy.txt`
+1. Import the repo on Vercel
+2. Set root directory to `frontend/`
+3. Add environment variable: `NEXT_PUBLIC_API_URL=https://your-render-app.onrender.com`
+4. Deploy
 
-- Free shipping on orders above ₹999
-- Standard shipping: ₹79, 3–5 business days
-- Express shipping: ₹149, 1–2 business days
-- No delivery to PO boxes
-- Orders placed before 2pm dispatched same day
+---
 
-### `exchange_policy.txt`
+## Policy Documents (`data/docs/`)
 
-- Exchange allowed within 14 days
-- Size exchanges are free
-- Style exchanges subject to price difference
-- Only one exchange per order
-
-### `faq.txt`
-
-- How do I track my order? → Check email for tracking link
-- Can I cancel after placing? → Within 1 hour of placing
-- Do you ship internationally? → Not currently
-- How do I contact support? → support@folio.in or WhatsApp +91-XXXXXXXXXX
+| File                   | Contents                                                                 |
+| ---------------------- | ------------------------------------------------------------------------ |
+| `refund_policy.txt`    | 7-day return window, unworn/unwashed with tags, 5–7 day refund, no sale returns |
+| `shipping_policy.txt`  | Free shipping ₹999+, standard ₹79 (3–5 days), express ₹149 (1–2 days)  |
+| `exchange_policy.txt`  | 14-day exchange window, free size swaps, one exchange per order          |
+| `faq.txt`              | Order tracking, cancellation window, international shipping, support contact |
 
 ---
 
 ## Key Constraints & Rules
 
-1. **LLM:** Only `qwen2.5-coder:1.5b` via Ollama — no OpenAI, no Anthropic API calls in the app
+1. **LLM:** Only `qwen2.5-coder:1.5b` via Ollama — no OpenAI or Anthropic API calls in the app
 2. **Embeddings:** Only `nomic-embed-text:latest` via Ollama — dimension must be 768 in Pinecone
-3. **SQL safety:** Block all write operations. Only `SELECT`. Validate before EXPLAIN, EXPLAIN before execute
-4. **Schema retrieval:** Always fetch from Pinecone first — never send the full schema string to the LLM unless Pinecone fails
-5. **Auth:** Manual JWT — no OAuth, no NextAuth, no third-party auth library
+3. **SQL safety:** Block all write operations. Only `SELECT`. Validate → EXPLAIN → execute
+4. **Schema retrieval:** Always fetch from Pinecone first — never send the full schema to the LLM unless Pinecone fails
+5. **Auth:** Manual JWT — no OAuth, no NextAuth, no third-party auth libraries
 6. **Review IDs:** `push_review` must return the inserted row ID (use `RETURNING id`)
-7. **Polling:** Frontend polls every 2500ms, stops as soon as status != "pending"
+7. **Polling:** Frontend polls every 2500ms, stops as soon as status != `"pending"`
 8. **Memory:** Last 2 user messages appended to SQL queries for follow-up context
-9. **Pinecone index:** Single index `fashion-rag`, two namespaces `rag_docs` + `sql_schema`
+9. **Pinecone index:** Single index `fashion-rag`, two namespaces: `rag_docs` + `sql_schema`
 10. **PDF support:** Both `.pdf` and `.txt` files must be supported in RAG ingestion
-    > > > > > > > origin/main
