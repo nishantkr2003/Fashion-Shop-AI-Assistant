@@ -13,7 +13,7 @@ User → Next.js Frontend → FastAPI Backend → Router Agent
                                                └── Chat Agent   → Ollama LLM
 ```
 
-![System Architecture](Images/Backend%20Service%20Dependency%20Graph.png)
+![System Architecture](Images/architecture.png)
 
 ---
 
@@ -32,37 +32,37 @@ User → Next.js Frontend → FastAPI Backend → Router Agent
 
 ## Sequence Diagram
 
-![Sequence Diagram](Images/Complete%20AI%20Query%20Flow%20Diagram.png)
+![Sequence Diagram](Images/sequence.png)
 
 ---
 
 ## Agent Routing
 
-![Agent Routing](Images/LangGraph%20Multi-Agent%20Routing%20Architectur....png)
+![Agent Routing](Images/agent-routing.png)
 
 ---
 
 ## RAG Workflow
 
-![RAG Workflow](Images/RAG%20Pipeline%20Diagram.png)
+![RAG Workflow](Images/rag-workflow.png)
 
 ---
 
 ## SQL Agent Flow
 
-![SQL Agent Flow](Images/SQL%20Agent%20Internal%20Pipeline.png)
+![SQL Agent Flow](Images/sql-agent-flow.png)
 
 ---
 
 ## Streaming Flow
 
-![Streaming Flow](Images/Streaming%20Architecture%20Diagram.png)
+![Streaming Flow](Images/streaming-flow.png)
 
 ---
 
 ## Review Queue Flow
 
-![Review Queue Flow](Images/Human%20Review%20Pipeline.png)
+![Review Queue Flow](Images/review-queue.png)
 
 ---
 
@@ -120,16 +120,16 @@ fashion-shop-ai/
 │   └── lib/
 │       └── api.ts               # fetch wrappers for all backend endpoints
 ├── Images/
-│   ├── Backend Service Dependency Graph.png
-│   ├── Complete AI Query Flow Diagram.png
-│   ├── Conversation Memory Flow.png
-│   ├── Deployment Architecture Diagram.png
-│   ├── Human Review Pipeline.png
-│   ├── LangGraph Multi-Agent Routing Architectur....png
-│   ├── RAG Pipeline Diagram.png
-│   ├── SQL Agent Internal Pipeline.png
-│   ├── Streaming Architecture Diagram.png
-│   └── mermaid-diagram (8).png
+│   ├── architecture.png
+│   ├── sequence.png
+│   ├── agent-routing.png
+│   ├── rag-workflow.png
+│   ├── sql-agent-flow.png
+│   ├── streaming-flow.png
+│   ├── review-queue.png
+│   ├── memory-flow.png
+│   ├── deployment.png
+│   └── mermaid-diagram.png
 ├── .gitignore
 ├── README.md
 └── run.md
