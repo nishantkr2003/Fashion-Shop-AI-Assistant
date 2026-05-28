@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+
 # Fashion Shop AI
 
 A production-ready, full-stack AI-powered shopping assistant with multi-agent architecture, streaming responses, RAG knowledge base, and human review queue.
@@ -12,19 +13,26 @@ User → Next.js Frontend → FastAPI Backend → Router Agent
                                                ├── SQL Agent    → Neon PostgreSQL
                                                ├── RAG Agent    → Pinecone + PDF
                                                └── Chat Agent   → Ollama LLM
+![System Architecture](Images/architecture.png)
 ```
 
 ## Tech Stack
 
-| Layer | Tech |
-|---|---|
-| Frontend | Next.js 14, TypeScript, Tailwind CSS, Zustand |
-| Backend | FastAPI, SQLAlchemy, JWT, Passlib |
-| AI | llama3.1:8b (chat), qwen2.5-coder:1.5b (SQL/routing), nomic-embed-text (embeddings) |
-| Vector DB | Pinecone |
-| Database | Neon PostgreSQL |
-| Deployment | Vercel (frontend), Render (backend) |
-=======
+| Layer      | Tech                                                                                |
+| ---------- | ----------------------------------------------------------------------------------- |
+| Frontend   | Next.js 14, TypeScript, Tailwind CSS, Zustand                                       |
+| Backend    | FastAPI, SQLAlchemy, JWT, Passlib                                                   |
+| AI         | llama3.1:8b (chat), qwen2.5-coder:1.5b (SQL/routing), nomic-embed-text (embeddings) |
+| Vector DB  | Pinecone                                                                            |
+| Database   | Neon PostgreSQL                                                                     |
+| Deployment | Vercel (frontend), Render (backend)                                                 |
+
+## =======
+
+## Sequence Diagram
+
+![Sequence Diagram](Images/sequence.png)
+
 # Fashion Shop AI Assistant — Master Build Prompt
 
 ## Project Identity
@@ -36,6 +44,7 @@ Build a full-stack AI assistant for a fashion e-commerce shop called **Folio**. 
 ## Tech Stack
 
 ### Backend
+
 - **Runtime:** Python 3.11+
 - **Framework:** FastAPI
 - **ORM:** SQLAlchemy (async with asyncpg)
@@ -50,6 +59,7 @@ Build a full-stack AI assistant for a fashion e-commerce shop called **Folio**. 
 - **Env:** `python-dotenv`
 
 ### Frontend
+
 - **Framework:** Next.js 14 (App Router)
 - **State:** Zustand
 - **UI components:** ShadCN UI
@@ -57,6 +67,7 @@ Build a full-stack AI assistant for a fashion e-commerce shop called **Folio**. 
 - **HTTP:** native fetch with streaming (ReadableStream)
 
 ### Models (Ollama — must be pulled before running)
+
 ```
 ollama pull qwen2.5-coder:1.5b
 ollama pull nomic-embed-text:latest
@@ -67,6 +78,7 @@ ollama pull nomic-embed-text:latest
 ## Environment Variables
 
 ### Backend `.env`
+
 ```
 DATABASE_URL=postgresql+asyncpg://user:pass@host/dbname   # Neon connection string
 JWT_SECRET=your_random_secret_here
@@ -78,10 +90,12 @@ OLLAMA_BASE_URL=http://localhost:11434
 ```
 
 ### Frontend `.env.local`
+
 ```
 NEXT_PUBLIC_API_URL=http://localhost:8000
 ```
->>>>>>> origin/main
+
+> > > > > > > origin/main
 
 ---
 
@@ -122,6 +136,35 @@ fashion-shop-ai/
     │   └── lib/
     │       └── api.ts        # Axios client, SSE stream helper
     └── .env.local.example
+---
+
+## Agent Routing
+
+![Agent Routing](Images/agent-routing.png)
+
+---
+
+## RAG Workflow
+
+![RAG Workflow](Images/rag-workflow.png)
+
+---
+
+## SQL Agent Flow
+
+![SQL Agent Flow](Images/sql-agent-flow.png)
+
+---
+
+## Streaming Flow
+
+![Streaming Flow](Images/streaming-flow.png)
+
+---
+
+## Review Queue Flow
+
+![Review Queue Flow](Images/review-queue.png)
 =======
 │   │   ├── __init__.py
 │   │   ├── main.py              # FastAPI app, CORS, router mounting
@@ -177,6 +220,7 @@ fashion-shop-ai/
 ---
 
 <<<<<<< HEAD
+
 ## Local Development
 
 ### Prerequisites
@@ -228,21 +272,21 @@ Visit http://localhost:3000
 
 ### Backend (`backend/.env`)
 
-| Variable | Description |
-|---|---|
-| `DATABASE_URL` | Neon PostgreSQL connection string |
-| `JWT_SECRET` | Secret key for JWT signing (min 32 chars) |
-| `OLLAMA_URL` | Ollama server URL (default: http://localhost:11434) |
-| `PINECONE_API_KEY` | Pinecone API key |
-| `PINECONE_INDEX` | Pinecone index name (default: fashion-shop) |
-| `CHAT_MODEL` | Ollama chat model (default: llama3.1:8b) |
-| `SQL_MODEL` | Ollama SQL/routing model (default: qwen2.5-coder:1.5b) |
-| `EMBED_MODEL` | Ollama embedding model (default: nomic-embed-text:latest) |
+| Variable           | Description                                               |
+| ------------------ | --------------------------------------------------------- |
+| `DATABASE_URL`     | Neon PostgreSQL connection string                         |
+| `JWT_SECRET`       | Secret key for JWT signing (min 32 chars)                 |
+| `OLLAMA_URL`       | Ollama server URL (default: http://localhost:11434)       |
+| `PINECONE_API_KEY` | Pinecone API key                                          |
+| `PINECONE_INDEX`   | Pinecone index name (default: fashion-shop)               |
+| `CHAT_MODEL`       | Ollama chat model (default: llama3.1:8b)                  |
+| `SQL_MODEL`        | Ollama SQL/routing model (default: qwen2.5-coder:1.5b)    |
+| `EMBED_MODEL`      | Ollama embedding model (default: nomic-embed-text:latest) |
 
 ### Frontend (`frontend/.env.local`)
 
-| Variable | Description |
-|---|---|
+| Variable              | Description     |
+| --------------------- | --------------- |
 | `NEXT_PUBLIC_API_URL` | Backend API URL |
 
 ---
@@ -251,42 +295,44 @@ Visit http://localhost:3000
 
 ### Auth
 
-| Method | Endpoint | Description |
-|---|---|---|
-| POST | `/auth/register` | Register new user |
-| POST | `/auth/login` | Login, get JWT |
-| GET | `/auth/me` | Get current user |
-| POST | `/auth/logout` | Logout (clears client token) |
+| Method | Endpoint         | Description                  |
+| ------ | ---------------- | ---------------------------- |
+| POST   | `/auth/register` | Register new user            |
+| POST   | `/auth/login`    | Login, get JWT               |
+| GET    | `/auth/me`       | Get current user             |
+| POST   | `/auth/logout`   | Logout (clears client token) |
 
 ### Chat
 
-| Method | Endpoint | Description |
-|---|---|---|
-| POST | `/chat/sessions` | Create session |
-| GET | `/chat/sessions` | List user sessions |
-| GET | `/chat/sessions/{id}/messages` | Get messages |
-| DELETE | `/chat/sessions/{id}` | Delete session |
-| POST | `/chat/stream` | SSE streaming chat |
+| Method | Endpoint                       | Description        |
+| ------ | ------------------------------ | ------------------ |
+| POST   | `/chat/sessions`               | Create session     |
+| GET    | `/chat/sessions`               | List user sessions |
+| GET    | `/chat/sessions/{id}/messages` | Get messages       |
+| DELETE | `/chat/sessions/{id}`          | Delete session     |
+| POST   | `/chat/stream`                 | SSE streaming chat |
 
 ### CSV Import
 
-| Method | Endpoint | Description |
-|---|---|---|
-| POST | `/import/upload` | Upload CSV, auto-create table |
+| Method | Endpoint         | Description                   |
+| ------ | ---------------- | ----------------------------- |
+| POST   | `/import/upload` | Upload CSV, auto-create table |
 
 ### Review Queue
 
-| Method | Endpoint | Description |
-|---|---|---|
-| GET | `/review/` | List review items |
-| PATCH | `/review/{id}` | Update review status |
+| Method | Endpoint       | Description          |
+| ------ | -------------- | -------------------- |
+| GET    | `/review/`     | List review items    |
+| PATCH  | `/review/{id}` | Update review status |
 
 ---
 
 ## Agent System
 
 ### Router Agent
+
 Uses `qwen2.5-coder:1.5b` to classify queries:
+
 - `sql` → product data questions (inventory, prices, stock)
 - `rag` → policy questions (shipping, returns, FAQ)
 - `chat` → general conversation
@@ -294,18 +340,21 @@ Uses `qwen2.5-coder:1.5b` to classify queries:
 Returns confidence score. If `< 0.75`, triggers human review.
 
 ### SQL Agent
+
 - Introspects database schema dynamically
 - Generates PostgreSQL SELECT queries
 - Blocks all destructive operations (INSERT/UPDATE/DELETE/DROP)
 - Supports: COUNT, AVG, GROUP BY, ORDER BY, LIMIT, ILIKE
 
 ### RAG Agent
+
 - Embeds query with `nomic-embed-text`
 - Retrieves top-5 chunks from Pinecone
 - Filters by cosine similarity > 0.5
 - Generates answer with `llama3.1:8b`
 
 ### Chat Agent
+
 - Multi-turn conversation with history (last 8 messages)
 - General assistant persona
 
@@ -314,6 +363,7 @@ Returns confidence score. If `< 0.75`, triggers human review.
 ## CSV Import
 
 POST any CSV to `/import/upload`. The system:
+
 1. Detects column names and types (String/Float/Integer)
 2. Creates or updates the PostgreSQL table automatically
 3. Inserts rows (ignores errors, skips duplicates)
@@ -328,7 +378,7 @@ No hardcoded schema — works with any CSV structure.
 
 Use `app/rag.py:ingest_pdf_text()` to index PDFs:
 
-```python
+````python
 from app.rag import ingest_pdf_text
 import asyncio
 
@@ -382,14 +432,16 @@ CREATE TABLE review_queue (
     reason   VARCHAR,
     status   VARCHAR DEFAULT 'pending'  -- pending | approved | edited | rejected
 );
-```
+````
 
 ### Products CSV format (`data/products.csv`)
+
 ```
 name,category,price,brand,color,stock
 Air Sprint Low,Shoes,2499,Nike,Black,15
 ...
 ```
+
 Generate at least 50 real-sounding products across: Shoes, Hoodies, Jackets, Jeans, T-Shirts, Bags. Use believable Indian prices (₹500–₹8000). Mix in-stock and out-of-stock items.
 
 ---
@@ -397,11 +449,13 @@ Generate at least 50 real-sounding products across: Shoes, Hoodies, Jackets, Jea
 ## Auth System (Manual JWT)
 
 ### `app/auth.py`
+
 - `hash_password(password: str) -> str` — bcrypt via passlib, reject if > 72 bytes
 - `verify_password(plain: str, hashed: str) -> bool`
 - `create_token(data: dict) -> str` — HS256 JWT, 24-hour expiry, uses `JWT_SECRET`
 
 ### `app/routes/auth.py`
+
 - `POST /auth/register` — validate email uniqueness, hash password, create user, return JWT + user
 - `POST /auth/login` — verify credentials, return JWT + user
 - Schemas: `RegisterInput(full_name, email, password: min_length=8, max_length=72)`, `LoginInput(email, password)`
@@ -412,6 +466,7 @@ Generate at least 50 real-sounding products across: Shoes, Hoodies, Jackets, Jea
 ## Pinecone Setup
 
 ### Index configuration
+
 ```python
 pc.create_index(
     name="fashion-rag",
@@ -422,12 +477,14 @@ pc.create_index(
 ```
 
 ### Namespaces
-| Namespace     | Contents                                 | Used by         |
-|---------------|------------------------------------------|-----------------|
-| `rag_docs`    | Chunked text from PDFs and TXT files     | RAG agent       |
-| `sql_schema`  | Per-table schema descriptions as docs    | SQL agent       |
+
+| Namespace    | Contents                              | Used by   |
+| ------------ | ------------------------------------- | --------- |
+| `rag_docs`   | Chunked text from PDFs and TXT files  | RAG agent |
+| `sql_schema` | Per-table schema descriptions as docs | SQL agent |
 
 ### Embeddings
+
 Use `OllamaEmbeddings(model="nomic-embed-text:latest")` for all embedding operations.
 
 ---
@@ -437,6 +494,7 @@ Use `OllamaEmbeddings(model="nomic-embed-text:latest")` for all embedding operat
 This is the core fix. The original agent sent the raw full schema to the LLM every time. The new flow uses Pinecone semantic search to retrieve only the relevant tables before generation.
 
 ### Flow
+
 ```
 User question
     ↓
@@ -501,6 +559,7 @@ Question: {question}
 ```
 
 ### Blocked operations
+
 ```python
 BLOCKED = {"delete", "update", "drop", "alter", "truncate", "insert"}
 >>>>>>> origin/main
@@ -509,6 +568,7 @@ BLOCKED = {"delete", "update", "drop", "alter", "truncate", "insert"}
 ---
 
 <<<<<<< HEAD
+
 ## Deployment
 
 ### Backend → Render
@@ -537,6 +597,7 @@ BLOCKED = {"delete", "update", "drop", "alter", "truncate", "insert"}
 ## Human Review
 
 Responses are automatically queued for review when:
+
 - Routing confidence < 0.75
 - Agent encounters an error
 
@@ -549,11 +610,12 @@ Reviewers can PATCH `/review/{id}` with status: `approved | edited | rejected`.
 1. Upload your CSV via `POST /import/upload`
 2. The table is auto-created, rows inserted, embeddings indexed
 3. The SQL agent reads the schema dynamically — no code changes needed
-4. The RAG agent searches Pinecone — PDF documents add context automatically
-=======
+4. # The RAG agent searches Pinecone — PDF documents add context automatically
+
 ## RAG Agent (`app/rag.py`)
 
 ### Ingestion
+
 ```python
 def ingest():
     """Loads all .pdf and .txt from data/docs/, chunks, embeds, stores in rag_docs namespace."""
@@ -568,6 +630,7 @@ def ingest():
 ```
 
 ### Retrieval
+
 ```python
 def retrieve(query: str, k: int = 3) -> list:
     store = PineconeVectorStore(
@@ -580,6 +643,7 @@ def retrieve(query: str, k: int = 3) -> list:
 ```
 
 ### Agent prompt
+
 ```
 Answer ONLY from the context below.
 If the answer is not in the context, say: "Information not available."
@@ -597,6 +661,7 @@ Question: {question}
 Uses `qwen2.5-coder:1.5b` via `ChatOllama`. Returns one of: `sql`, `rag`, `chat`.
 
 ### Prompt
+
 ```
 Classify the query. Return EXACTLY ONE word: sql, rag, or chat.
 
@@ -608,6 +673,7 @@ Query: {query}
 ```
 
 ### Logic
+
 ```python
 result = llm.invoke(prompt).content.lower().strip()
 if "rag"  in result: return {"agent": "rag",  "confidence": 0.95}
@@ -678,12 +744,12 @@ def review_status(review_id: int):
 
 ## Review Routes (`app/routes/review.py`)
 
-| Endpoint | Description | Returns |
-|---|---|---|
-| `GET /review/queue` | All pending items | `[{id, query, response, reason, status}]` |
-| `POST /review/approve/{id}` | Set status=approved | `{success, id, status, message, query}` |
-| `POST /review/reject/{id}` | Set status=rejected | `{success, id, status, message}` |
-| `POST /review/edit/{id}` | Update response, set status=edited | `{success, id, status, message}` |
+| Endpoint                    | Description                        | Returns                                   |
+| --------------------------- | ---------------------------------- | ----------------------------------------- |
+| `GET /review/queue`         | All pending items                  | `[{id, query, response, reason, status}]` |
+| `POST /review/approve/{id}` | Set status=approved                | `{success, id, status, message, query}`   |
+| `POST /review/reject/{id}`  | Set status=rejected                | `{success, id, status, message}`          |
+| `POST /review/edit/{id}`    | Update response, set status=edited | `{success, id, status, message}`          |
 
 **Critical:** `approve` and `edit` must return `message` (the resolved response) in the body so the frontend can display it immediately after the poller fires — no second round-trip needed.
 
@@ -741,22 +807,24 @@ Review panel refreshes queue count
 ## Frontend Architecture (Next.js 14)
 
 ### Zustand store (`store/chatStore.ts`)
+
 ```typescript
 interface ChatStore {
-  sessions: Session[]
-  activeSession: number | null
-  messages: Record<number, Message[]>
-  reviewItems: ReviewItem[]
-  isStreaming: boolean
+  sessions: Session[];
+  activeSession: number | null;
+  messages: Record<number, Message[]>;
+  reviewItems: ReviewItem[];
+  isStreaming: boolean;
 
-  addMessage: (sessionId: number, msg: Message) => void
-  setStreaming: (v: boolean) => void
-  loadReviewQueue: () => Promise<void>
-  resolveReviewMessage: (reviewId: number, text: string) => void
+  addMessage: (sessionId: number, msg: Message) => void;
+  setStreaming: (v: boolean) => void;
+  loadReviewQueue: () => Promise<void>;
+  resolveReviewMessage: (reviewId: number, text: string) => void;
 }
 ```
 
 ### API layer (`lib/api.ts`)
+
 ```typescript
 export const sendMessage   = (msg: string)   => fetch(`${API}/chat/send`, { method: 'POST', ... })
 export const pollStatus    = (id: number)    => fetch(`${API}/chat/review/status/${id}`)
@@ -766,15 +834,18 @@ export const rejectItem    = (id: number)   => fetch(`${API}/review/reject/${id}
 ```
 
 ### Message types
-| `agent` value | Render as |
-|---|---|
-| `sql` | Parse `\n\n`-separated blocks → Product card grid |
-| `rag` | Plain text bubble |
-| `chat` | Plain text bubble |
-| `review: true` | "Awaiting review" banner, starts polling |
+
+| `agent` value  | Render as                                         |
+| -------------- | ------------------------------------------------- |
+| `sql`          | Parse `\n\n`-separated blocks → Product card grid |
+| `rag`          | Plain text bubble                                 |
+| `chat`         | Plain text bubble                                 |
+| `review: true` | "Awaiting review" banner, starts polling          |
 
 ### Product card parsing
+
 SQL `format_result()` returns blocks like:
+
 ```
 Name: Air Sprint Low
 Category: Shoes
@@ -783,9 +854,11 @@ Brand: Nike
 Color: Black
 Stock: 15
 ```
+
 Parse each block by splitting on `\n`, then `:` to get key-value pairs. Render as cards with category emoji, price in gold, stock indicator dot.
 
 ### Streaming
+
 Use `ReadableStream` on `POST /chat/send`. The current backend returns a full JSON response, not a stream. To add streaming, wrap `stream.py`'s `StreamingResponse` around the final formatted text. Frontend reads chunks via `reader.read()` in a loop and appends tokens to the message.
 
 ---
@@ -831,6 +904,7 @@ npm run dev                         # http://localhost:3000
 Create realistic brand-style documents for a fashion shop called Folio.
 
 ### `refund_policy.pdf` or `refund_policy.txt`
+
 - 7-day return window from delivery date
 - Items must be unworn, unwashed, with original tags
 - Refund processed within 5–7 business days to original payment method
@@ -838,6 +912,7 @@ Create realistic brand-style documents for a fashion shop called Folio.
 - Process: raise return request on website → receive return label → ship back
 
 ### `shipping_policy.txt`
+
 - Free shipping on orders above ₹999
 - Standard shipping: ₹79, 3–5 business days
 - Express shipping: ₹149, 1–2 business days
@@ -845,12 +920,14 @@ Create realistic brand-style documents for a fashion shop called Folio.
 - Orders placed before 2pm dispatched same day
 
 ### `exchange_policy.txt`
+
 - Exchange allowed within 14 days
 - Size exchanges are free
 - Style exchanges subject to price difference
 - Only one exchange per order
 
 ### `faq.txt`
+
 - How do I track my order? → Check email for tracking link
 - Can I cancel after placing? → Within 1 hour of placing
 - Do you ship internationally? → Not currently
@@ -870,4 +947,4 @@ Create realistic brand-style documents for a fashion shop called Folio.
 8. **Memory:** Last 2 user messages appended to SQL queries for follow-up context
 9. **Pinecone index:** Single index `fashion-rag`, two namespaces `rag_docs` + `sql_schema`
 10. **PDF support:** Both `.pdf` and `.txt` files must be supported in RAG ingestion
->>>>>>> origin/main
+    > > > > > > > origin/main
